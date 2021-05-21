@@ -1,0 +1,22 @@
+.DS_Store
+node_modules/
+.cache/
+
+## Demo support files
+demo/
+
+## CSS built from Sass process
+src/*.css
+
+## *-css built from sass-render process
+*-css.js
+
+## dist files
+dist/
+build/
+
+## Karma code coverage reports
+coverage/
+
+## Include demo.md file
+!demo/demo.md
