@@ -101,7 +101,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm-run-all test linters bundler postinstall",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
