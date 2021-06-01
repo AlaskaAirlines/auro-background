@@ -7,12 +7,12 @@
     "  3. Go to http://localhost:8000",
     "================================================================================"
   ],
-  "name": "@aurodesignsystem/auro-background",
+  "name": "@aurolabs/aurolabs-background",
   "version": "0.0.0",
-  "description": "auro-background HTML custom element",
+  "description": "aurolabs-background HTML custom element",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlaskaAirlines/auro-background"
+    "url": "https://github.com/AlaskaAirlines/aurolabs-background"
   },
   "main": "index.js",
   "license": "Apache-2.0",
