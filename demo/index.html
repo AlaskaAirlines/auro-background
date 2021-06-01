@@ -1,0 +1,54 @@
+<!--
+  Copyright (c) Alaska Air. All right reserved. Licensed under the Apache-2.0 license
+  See LICENSE in the project root for license information.
+
+  HTML in this document is standardized are NOT to be edited.
+  All demo code should be edited in ./demo/demo.md
+
+  With the exception of adding custom elements if needed for the demo.
+
+  ----------------------- DO NOT EDIT -----------------------------
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auro Web Component Generator | auro-background custom element</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/prismjs@latest/themes/prism.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main></main>
+
+    <script type="module">
+      import 'https://unpkg.com/marked@latest/marked.min.js';
+      import 'https://unpkg.com/prismjs@latest/prism.js';
+      fetch('/demo/demo.md')
+        .then((response) => response.text())
+        .then((text) => {
+          const rawHtml = marked(text);
+          document.querySelector('main').innerHTML = rawHtml;
+          Prism.highlightAll();
+        });
+    </script>
+    <script type="module" src="../src/auro-background.js"></script>
+
+    <!-- If additional elements are needed for the demo, add them here. -->
+    <script src="https://unpkg.com/@alaskaairux/auro-accordion@latest/dist/auro-accordion__bundled.js" type="module"></script>
+    <script src="https://unpkg.com/@alaskaairux/auro-card@latest/dist/auro-banner__bundled.js" type="module"></script>
+    <script src="https://unpkg.com/@alaskaairux/auro-card@latest/dist/auro-card__bundled.js" type="module"></script>
+    <script src="https://unpkg.com/@alaskaairux/auro-icon@latest/dist/auro-icon__bundled.js" type="module"></script>
+    <script src="https://unpkg.com/@alaskaairux/auro-hyperlink@latest/dist/auro-hyperlink__bundled.js" type="module"></script>
+
+
+
+
+  </body>
+</html>
