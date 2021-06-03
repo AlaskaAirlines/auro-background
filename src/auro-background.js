@@ -62,7 +62,7 @@ class AuroBackground extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-    <style jsx>
+    <style scoped>
       ${ifDefined(!this.background ? '' : `.bg {background: ${this.background};}`)}
       ${ifDefined(!this.backgroundSm ? '' : `@media (min-width: 660px) {.background-sm {background: ${this.backgroundSm};}}`)}
       ${ifDefined(!this.backgroundMd ? '' : `@media (min-width: 1024px) {.background-md {background: ${this.backgroundMd};}}`)}
@@ -72,7 +72,7 @@ class AuroBackground extends LitElement {
       ${ifDefined(!this.minHeightMd ? '' : `@media (min-width: 1024px) {.background-md {min-height: ${this.minHeightMd};}}`)}
       ${ifDefined(!this.minHeightLg ? '' : `@media (min-width: 1232px) {.background-lg {min-height: ${this.minHeightLg};}}`)}
     </style>
-    
+
     <div class="bg background-sm background-md background-lg">
       <slot></slot>
     </div>
