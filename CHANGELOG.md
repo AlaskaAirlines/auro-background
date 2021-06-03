@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.0.3](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.0.2...v1.0.3) (2021-06-03)
+
+
+### Bug Fixes
+
+* remove jsx attribute from style tag, add scoped ([0a868a1](https://github.com/AlaskaAirlines/aurolabs-background/commit/0a868a11e3e452be92c1f568713f66455988057b))
+
 ## [1.0.2](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.0.1...v1.0.2) (2021-06-03)
 
 
