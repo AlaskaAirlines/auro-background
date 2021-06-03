@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.0.2](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.0.1...v1.0.2) (2021-06-03)
+
+
+### Bug Fixes
+
+* add jsx to style tag ([0abd395](https://github.com/AlaskaAirlines/aurolabs-background/commit/0abd395b809d1335ac20e3fb022fe34c4254fd3e))
+
 ## [1.0.1](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.0.0...v1.0.1) (2021-06-02)
 
 
