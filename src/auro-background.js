@@ -6,10 +6,19 @@
 
 // If using litElement base class
 import { LitElement, html } from "lit-element";
-import { ifDefined } from 'lit-html/directives/if-defined.js';
+// import { styleMap } from 'lit-html/directives/style-map'; // For some reason it doesn't seem to like "url" in the background property values
 
 import styleCss from "./style-css.js";
 import styleCssFixed from './style-fixed-css.js';
+
+
+const styleMap = (style) => {
+  return Object.entries(style).reduce((styleString, [propName, propValue]) => {
+      propName = propName.replace(/([A-Z])/g, matches => `-${matches[0].toLowerCase()}`);
+      return `${styleString}${propName}:${propValue};`;
+  }, '');
+}
+
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
@@ -29,10 +38,13 @@ import styleCssFixed from './style-fixed-css.js';
 
 // build the component class
 class AuroBackground extends LitElement {
-  // constructor() {
-  //   super();
-  // }
 
+  constructor() {
+    super();
+    this.background = "transparent";
+    this.minHeight = "100%";
+
+  }
   // function to define props used within the scope of this component
   static get properties() {
     return {
@@ -56,26 +68,31 @@ class AuroBackground extends LitElement {
     ];
   }
 
-  // When using auroElement, use the following attribute and function when hiding content from screen readers.
-  // aria-hidden="${this.hideAudible(this.hiddenAudible)}"
-
   // function that renders the HTML and CSS into  the scope of the component
   render() {
-    return html`
-    <style scoped>
-      ${ifDefined(!this.background ? '' : `.bg {background: ${this.background};}`)}
-      ${ifDefined(!this.backgroundSm ? '' : `@media (min-width: 660px) {.background-sm {background: ${this.backgroundSm};}}`)}
-      ${ifDefined(!this.backgroundMd ? '' : `@media (min-width: 1024px) {.background-md {background: ${this.backgroundMd};}}`)}
-      ${ifDefined(!this.backgroundLg ? '' : `@media (min-width: 1232px) {.background-lg {background: ${this.backgroundLg};}}`)}
-      ${ifDefined(!this.minHeight ? '.bg {width: auto; min-height: 100%;}' : `.bg {width: auto; min-height: ${this.minHeight};}`)}
-      ${ifDefined(!this.minHeightSm ? '' : `@media (min-width: 660px) {.background-sm {min-height: ${this.minHeightSm};}}`)}
-      ${ifDefined(!this.minHeightMd ? '' : `@media (min-width: 1024px) {.background-md {min-height: ${this.minHeightMd};}}`)}
-      ${ifDefined(!this.minHeightLg ? '' : `@media (min-width: 1232px) {.background-lg {min-height: ${this.minHeightLg};}}`)}
-    </style>
 
-    <div class="bg background-sm background-md background-lg">
-      <slot></slot>
-    </div>
+    this.backgroundStyles = {
+      ...(this.background && {'background': this.background}),
+      ...(this.minHeight && {'min-height': this.minHeight, 'width': 'auto'})
+    };
+    this.backgroundSmallStyles = {
+      ...(this.backgroundSm && {'background': this.backgroundSm}),
+      ...(this.minHeightSm && {'min-height': this.minHeightSm, 'width': 'auto'})
+    };
+    this.backgroundMediumStyles = {
+      ...(this.backgroundSm && {'background': this.backgroundSm}),
+      ...(this.minHeightSm && {'min-height': this.minHeightSm, 'width': 'auto'})
+    };
+    this.backgroundLargeStyles = {
+      ...(this.backgroundSm && {'background': this.backgroundSm}),
+      ...(this.minHeightSm && {'min-height': this.minHeightSm, 'width': 'auto'})
+    };
+
+    return html`
+      <div class="bg" style=${styleMap(this.backgroundStyles)}><slot></slot></div>
+      ${this.backgroundSm  && html`<div class="sized-background background-sm" style=${styleMap(this.backgroundSmallStyles)}><slot></slot></div>`}
+      ${this.backgroundMd && html`<div class="sized-background background-md" style=${styleMap(this.backgroundMediumStyles)}><slot></slot></div>`}
+      ${this.backgroundLg && html`<div class="sized-background background-lg" style=${styleMap(this.backgroundLargeStyles)}><slot></slot></div>`}
     `;
   }
 }

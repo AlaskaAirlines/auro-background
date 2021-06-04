@@ -83,7 +83,7 @@ In this example the `<auro-background>` wraps the component and is also used in 
     <auro-hyperlink secondary cta href="#" target="_blank" >Schedule appointment</auro-hyperlink>
   </div>
     <div class="bannerImage">
-      <auro-background  background="#d3c7ad url(https://images.unsplash.com/photo-1612277795511-39caabca8185?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) right center/cover no-repeat;" backgroundsm="#d3c7ad url(https://images.unsplash.com/photo-1612277795511-39caabca8185?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) right bottom/cover no-repeat;"></auro-background>
+      <auro-background  minHeight="17rem" minHeightSm="100%" background="#d3c7ad url(https://images.unsplash.com/photo-1612277795511-39caabca8185?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) right center/cover no-repeat;" backgroundsm="#d3c7ad url(https://images.unsplash.com/photo-1612277795511-39caabca8185?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) right bottom/cover no-repeat;"></auro-background>
     </div>
   </div>
   </auro-background>
@@ -106,6 +106,9 @@ In this example the `<auro-background>` wraps the component and is also used in 
     </div>
   </div>
   </auro-background>
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
 ```
 
 </auro-accordion>
