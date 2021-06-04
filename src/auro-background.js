@@ -68,8 +68,8 @@ class AuroBackground extends LitElement {
 
     return html`
 
-    <style>
-    .bg__${id} {
+    <style scope="${id}">
+    .bg {
       width: auto;
       min-height: ${this.minHeight};
       background: ${this.background};
@@ -82,7 +82,7 @@ class AuroBackground extends LitElement {
       ${ifDefined(!this.minHeightMd ? '' : `@media (min-width: 1024px) {.bg-md {min-height: ${this.minHeightMd};}}`)}
       ${ifDefined(!this.minHeightLg ? '' : `@media (min-width: 1232px) {.bg-lg {min-height: ${this.minHeightLg};}}`)}
     </style>
-    <div class="bg__${id} bg-sm bg-md bg-lg">
+    <div class="bg bg-sm bg-md bg-lg">
       <slot></slot>
     </div>
     `;
