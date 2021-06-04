@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 /* eslint-disable no-negated-condition */
 // Copyright (c) 2021 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
 // See LICENSE in the project root for license information.
@@ -25,7 +26,6 @@ const styleMap = (style) => {
 * auro-background provides users a way to add a background image or color block incuding a gradient.
  *
  * @attr {Boolean} fixed - Uses fixed pixel values for element shape
- * @attr {String} cssClass - Applies designated CSS class to demo element - you want to delete me!
  * @attr {String} background - Applies the css background to all screen sizes
  * @attr {String} backgroundSm - Applies the css background to screen sizes 660px and above
  * @attr {String} backgroundMd - Applies the css background to screen sizes 1024px and above

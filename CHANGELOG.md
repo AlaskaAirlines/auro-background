@@ -1,5 +1,26 @@
 # Semantic Release Automated Changelog
 
+## [1.2.1](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.0...v1.2.1) (2021-06-04)
+
+
+### Bug Fixes
+
+* remove random number ([f6ec80b](https://github.com/AlaskaAirlines/aurolabs-background/commit/f6ec80bc215d69f8a015720271b438577024c113))
+
+# [1.2.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.1.0...v1.2.0) (2021-06-04)
+
+
+### Features
+
+* try with unique scope ([f1985ac](https://github.com/AlaskaAirlines/aurolabs-background/commit/f1985ac78578a1e4afb61507d8643e1b9179baea))
+
+# [1.1.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.0.3...v1.1.0) (2021-06-04)
+
+
+### Features
+
+* try with unique id per component ([676f73b](https://github.com/AlaskaAirlines/aurolabs-background/commit/676f73bddb17630cdc164b9e7d636756f0413afb))
+
 ## [1.0.3](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.0.2...v1.0.3) (2021-06-03)
 
 

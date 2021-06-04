@@ -4,10 +4,9 @@ auro-background provides users a way to add a background image or color block in
 
 ## Attributes
 
-| Attribute  | Type      | Description                                      |
-|------------|-----------|--------------------------------------------------|
-| `cssClass` | `String`  | Applies designated CSS class to demo element - you want to delete me! |
-| `fixed`    | `Boolean` | Uses fixed pixel values for element shape        |
+| Attribute | Type      | Description                               |
+|-----------|-----------|-------------------------------------------|
+| `fixed`   | `Boolean` | Uses fixed pixel values for element shape |
 
 ## Properties
 
