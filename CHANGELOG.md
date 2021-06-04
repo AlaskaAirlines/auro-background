@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.2.1](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.0...v1.2.1) (2021-06-04)
+
+
+### Bug Fixes
+
+* remove random number ([f6ec80b](https://github.com/AlaskaAirlines/aurolabs-background/commit/f6ec80bc215d69f8a015720271b438577024c113))
+
 # [1.2.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.1.0...v1.2.0) (2021-06-04)
 
 
