@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.2.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.1.0...v1.2.0) (2021-06-04)
+
+
+### Features
+
+* try with unique scope ([f1985ac](https://github.com/AlaskaAirlines/aurolabs-background/commit/f1985ac78578a1e4afb61507d8643e1b9179baea))
+
 # [1.1.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.0.3...v1.1.0) (2021-06-04)
 
 
