@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.1.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.0.3...v1.1.0) (2021-06-04)
+
+
+### Features
+
+* try with unique id per component ([676f73b](https://github.com/AlaskaAirlines/aurolabs-background/commit/676f73bddb17630cdc164b9e7d636756f0413afb))
+
 ## [1.0.3](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.0.2...v1.0.3) (2021-06-03)
 
 
