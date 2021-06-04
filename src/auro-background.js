@@ -92,9 +92,6 @@ class AuroBackground extends LitElement {
       'min-height': this.minHeightLg ? this.minHeightLg : this.backgroundMediumStyles['min-height'],
     };
 
-    console.warn(this.backgroundStyles);
-    console.warn(this.backgroundSmallStyles);
-
     return html`
       <div class="background background-xs" style=${styleMap(this.backgroundStyles)}>
         <div class="background background-sm" style=${styleMap(this.backgroundSmallStyles)}>
@@ -106,6 +103,12 @@ class AuroBackground extends LitElement {
         </div>
       </div>
     `;
+  }
+
+  firstUpdated() {
+    window.addEventListener('resize', () => {
+      console.log("RESIZE")
+    });
   }
 }
 
