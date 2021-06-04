@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [1.2.2](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.1...v1.2.2) (2021-06-04)
+
+
+### Bug Fixes
+
+* build issues ([2b38789](https://github.com/AlaskaAirlines/aurolabs-background/commit/2b387895efbd263fb6746f9f1018cc8b9ef8b3bb))
+* use multiple divs and slots instead of rendering style tag ([2e37271](https://github.com/AlaskaAirlines/aurolabs-background/commit/2e372710eca80212d7dbc1531fb79779626b8b5d))
+
 ## [1.2.1](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.0...v1.2.1) (2021-06-04)
 
 
