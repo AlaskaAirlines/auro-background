@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 /* eslint-disable no-negated-condition */
 // Copyright (c) 2021 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
 // See LICENSE in the project root for license information.
@@ -16,7 +17,6 @@ import styleCssFixed from './style-fixed-css.js';
 * auro-background provides users a way to add a background image or color block incuding a gradient.
  *
  * @attr {Boolean} fixed - Uses fixed pixel values for element shape
- * @attr {String} cssClass - Applies designated CSS class to demo element - you want to delete me!
  * @attr {String} background - Applies the css background to all screen sizes
  * @attr {String} backgroundSm - Applies the css background to screen sizes 660px and above
  * @attr {String} backgroundMd - Applies the css background to screen sizes 1024px and above
@@ -29,9 +29,12 @@ import styleCssFixed from './style-fixed-css.js';
 
 // build the component class
 class AuroBackground extends LitElement {
-  // constructor() {
-  //   super();
-  // }
+  constructor() {
+    super();
+    this.background = "transparent";
+    this.minHeight = "100%";
+
+  }
 
   // function to define props used within the scope of this component
   static get properties() {
@@ -61,19 +64,25 @@ class AuroBackground extends LitElement {
 
   // function that renders the HTML and CSS into  the scope of the component
   render() {
+    const id = Math.round(Math.random() * 100000);
+
     return html`
 
     <style>
-      ${ifDefined(!this.background ? '' : `.bg {background: ${this.background};}`)}
-      ${ifDefined(!this.backgroundSm ? '' : `@media (min-width: 660px) {.background-sm {background: ${this.backgroundSm};}}`)}
-      ${ifDefined(!this.backgroundMd ? '' : `@media (min-width: 1024px) {.background-md {background: ${this.backgroundMd};}}`)}
-      ${ifDefined(!this.backgroundLg ? '' : `@media (min-width: 1232px) {.background-lg {background: ${this.backgroundLg};}}`)}
-      ${ifDefined(!this.minHeight ? '.bg {width: auto; min-height: 100%;}' : `.bg {width: auto; min-height: ${this.minHeight};}`)}
-      ${ifDefined(!this.minHeightSm ? '' : `@media (min-width: 660px) {.background-sm {min-height: ${this.minHeightSm};}}`)}
-      ${ifDefined(!this.minHeightMd ? '' : `@media (min-width: 1024px) {.background-md {min-height: ${this.minHeightMd};}}`)}
-      ${ifDefined(!this.minHeightLg ? '' : `@media (min-width: 1232px) {.background-lg {min-height: ${this.minHeightLg};}}`)}
+    .bg__${id} {
+      width: auto;
+      min-height: ${this.minHeight};
+      background: ${this.background};
+    }
+
+      ${ifDefined(!this.backgroundSm ? '' : `@media (min-width: 660px) {.bg-sm {background: ${this.backgroundSm};}}`)}
+      ${ifDefined(!this.backgroundMd ? '' : `@media (min-width: 1024px) {.bg-md {background: ${this.backgroundMd};}}`)}
+      ${ifDefined(!this.backgroundLg ? '' : `@media (min-width: 1232px) {.bg-lg {background: ${this.backgroundLg};}}`)}
+      ${ifDefined(!this.minHeightSm ? '' : `@media (min-width: 660px) {.bg-sm {min-height: ${this.minHeightSm};}}`)}
+      ${ifDefined(!this.minHeightMd ? '' : `@media (min-width: 1024px) {.bg-md {min-height: ${this.minHeightMd};}}`)}
+      ${ifDefined(!this.minHeightLg ? '' : `@media (min-width: 1232px) {.bg-lg {min-height: ${this.minHeightLg};}}`)}
     </style>
-    <div class="bg background-sm background-md background-lg">
+    <div class="bg__${id} bg-sm bg-md bg-lg">
       <slot></slot>
     </div>
     `;

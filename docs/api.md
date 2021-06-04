@@ -4,20 +4,19 @@ auro-background provides users a way to add a background image or color block in
 
 ## Attributes
 
-| Attribute  | Type      | Description                                      |
-|------------|-----------|--------------------------------------------------|
-| `cssClass` | `String`  | Applies designated CSS class to demo element - you want to delete me! |
-| `fixed`    | `Boolean` | Uses fixed pixel values for element shape        |
+| Attribute | Type      | Description                               |
+|-----------|-----------|-------------------------------------------|
+| `fixed`   | `Boolean` | Uses fixed pixel values for element shape |
 
 ## Properties
 
-| Property       | Attribute      | Type     | Description                                      |
-|----------------|----------------|----------|--------------------------------------------------|
-| `background`   | `background`   | `String` | Applies the css background to all screen sizes   |
-| `backgroundLg` | `backgroundLg` | `String` | Applies the css background screen sizes 1232px and above |
-| `backgroundMd` | `backgroundMd` | `String` | Applies the css background to screen sizes 1024px and above |
-| `backgroundSm` | `backgroundSm` | `String` | Applies the css background to screen sizes 660px and above |
-| `minHeight`    | `minHeight`    | `String` | In some implementations a minimum height is needed for the background to show |
-| `minHeightLg`  | `minHeightLg`  | `String` | In some implementations a minimum height is needed this applies to screen sizes 1234px and above |
-| `minHeightMd`  | `minHeightMd`  | `String` | In some implementations a minimum height is needed this applies to screen sizes 1024px and above |
-| `minHeightSm`  | `minHeightSm`  | `String` | In some implementations a minimum height is needed this applies to screen sizes 660px and above |
+| Property       | Attribute      | Type     | Default       | Description                                      |
+|----------------|----------------|----------|---------------|--------------------------------------------------|
+| `background`   | `background`   | `String` | "transparent" | Applies the css background to all screen sizes   |
+| `backgroundLg` | `backgroundLg` | `String` |               | Applies the css background screen sizes 1232px and above |
+| `backgroundMd` | `backgroundMd` | `String` |               | Applies the css background to screen sizes 1024px and above |
+| `backgroundSm` | `backgroundSm` | `String` |               | Applies the css background to screen sizes 660px and above |
+| `minHeight`    | `minHeight`    | `String` | "100%"        | In some implementations a minimum height is needed for the background to show |
+| `minHeightLg`  | `minHeightLg`  | `String` |               | In some implementations a minimum height is needed this applies to screen sizes 1234px and above |
+| `minHeightMd`  | `minHeightMd`  | `String` |               | In some implementations a minimum height is needed this applies to screen sizes 1024px and above |
+| `minHeightSm`  | `minHeightSm`  | `String` |               | In some implementations a minimum height is needed this applies to screen sizes 660px and above |
