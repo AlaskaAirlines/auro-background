@@ -13,12 +13,15 @@ import styleCss from "./style-css.js";
 import styleCssFixed from './style-fixed-css.js';
 
 
-const styleMap = (style) => {
-  return Object.entries(style).reduce((styleString, [propName, propValue]) => {
-      propName = propName.replace(/([A-Z])/g, matches => `-${matches[0].toLowerCase()}`);
-      return `${styleString}${propName}:${propValue};`;
-  }, '');
-}
+const styleMap = (style) => Object.entries(style).reduce((styleString, [
+  propName,
+  propValue
+]) => {
+  const propertyName = propName.replace(/(?<prop>[A-Z])/gu, (matches) => `-${matches[0].toLowerCase()}`);
+
+
+  return `${styleString}${propertyName}:${propValue};`;
+}, '')
 
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
@@ -45,6 +48,7 @@ class AuroBackground extends LitElement {
     this.minHeight = "100%";
 
   }
+
   // function to define props used within the scope of this component
   static get properties() {
     return {
@@ -72,25 +76,29 @@ class AuroBackground extends LitElement {
   render() {
 
     this.backgroundStyles = {
-      ...(this.background && {'background': this.background}),
-      ...(this.minHeight && {'min-height': this.minHeight, 'width': 'auto'})
+      ...this.background && {'background': this.background},
+      ...this.minHeight && {'min-height': this.minHeight,
+        'width': 'auto'}
     };
     this.backgroundSmallStyles = {
-      ...(this.backgroundSm && {'background': this.backgroundSm}),
-      ...(this.minHeightSm && {'min-height': this.minHeightSm, 'width': 'auto'})
+      ...this.backgroundSm && {'background': this.backgroundSm},
+      ...this.minHeightSm && {'min-height': this.minHeightSm,
+        'width': 'auto'}
     };
     this.backgroundMediumStyles = {
-      ...(this.backgroundSm && {'background': this.backgroundSm}),
-      ...(this.minHeightSm && {'min-height': this.minHeightSm, 'width': 'auto'})
+      ...this.backgroundSm && {'background': this.backgroundSm},
+      ...this.minHeightSm && {'min-height': this.minHeightSm,
+        'width': 'auto'}
     };
     this.backgroundLargeStyles = {
-      ...(this.backgroundSm && {'background': this.backgroundSm}),
-      ...(this.minHeightSm && {'min-height': this.minHeightSm, 'width': 'auto'})
+      ...this.backgroundSm && {'background': this.backgroundSm},
+      ...this.minHeightSm && {'min-height': this.minHeightSm,
+        'width': 'auto'}
     };
 
     return html`
       <div class="bg" style=${styleMap(this.backgroundStyles)}><slot></slot></div>
-      ${this.backgroundSm  && html`<div class="sized-background background-sm" style=${styleMap(this.backgroundSmallStyles)}><slot></slot></div>`}
+      ${this.backgroundSm && html`<div class="sized-background background-sm" style=${styleMap(this.backgroundSmallStyles)}><slot></slot></div>`}
       ${this.backgroundMd && html`<div class="sized-background background-md" style=${styleMap(this.backgroundMediumStyles)}><slot></slot></div>`}
       ${this.backgroundLg && html`<div class="sized-background background-lg" style=${styleMap(this.backgroundLargeStyles)}><slot></slot></div>`}
     `;
