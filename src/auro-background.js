@@ -84,11 +84,11 @@ class AuroBackground extends LitElement {
       'min-height': this.minHeightSm ? this.minHeightSm : this.minHeight,
     };
     this.backgroundMediumStyles = {
-      'background': this.backgroundMd ? this.backgroundMd : this.backgroundSmallStyles['background'],
+      'background': this.backgroundMd ? this.backgroundMd : this.backgroundSmallStyles.background,
       'min-height': this.minHeightMd ? this.minHeightMd : this.backgroundSmallStyles['min-height'],
     };
     this.backgroundLargeStyles = {
-      'background': this.backgroundLg ? this.backgroundLg : this.backgroundMediumStyles['background'],
+      'background': this.backgroundLg ? this.backgroundLg : this.backgroundMediumStyles.background,
       'min-height': this.minHeightLg ? this.minHeightLg : this.backgroundMediumStyles['min-height'],
     };
 
@@ -103,12 +103,6 @@ class AuroBackground extends LitElement {
         </div>
       </div>
     `;
-  }
-
-  firstUpdated() {
-    window.addEventListener('resize', () => {
-      console.log("RESIZE")
-    });
   }
 }
 
