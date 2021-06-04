@@ -7,12 +7,12 @@
     "  3. Go to http://localhost:8000",
     "================================================================================"
   ],
-  "name": "@aurodesignsystem/auro-background",
-  "version": "0.0.0",
+  "name": "@aurolabs/auro-background",
+  "version": "1.0.3",
   "description": "auro-background HTML custom element",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlaskaAirlines/auro-background"
+    "url": "https://github.com/AlaskaAirlines/aurolabs-background"
   },
   "main": "index.js",
   "license": "Apache-2.0",
@@ -101,7 +101,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm-run-all test linters bundler postinstall",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
