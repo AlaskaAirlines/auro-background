@@ -3,6 +3,9 @@
 
 // ---------------------------------------------------------------------
 
+/* stylelint-disable declaration-no-important */
+
+
 // Import Auro tokens
 @import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SCSSVariables';
 @import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SassCustomProperties';
@@ -10,23 +13,38 @@
 @import './../node_modules/@alaskaairux/webcorestylesheets/dist/breakpoints';
 @import './../node_modules/@alaskaairux/webcorestylesheets/dist/core';
 
-
-.sized-background {
-  display: none;
+.background {
+  width: auto;
+  height: inherit;
 }
 
-@media (min-width: 660px) {
-  .background-sm {
-    display: block;
+@media (max-width: 659px) {
+  .background-sm, .background-md, .background-lg {
+    min-height: 100% !important;
+    background: transparent !important;
   }
 }
-@media (min-width: 1024px) {
-  .background-md {
-    display: block;
+
+
+@media (min-width: 660px) and (max-width: 1023px) {
+  .background-xs, .background-md, .background-lg {
+    min-height: 100% !important;
+    background: transparent !important;
   }
 }
+
+
+@media (min-width: 1024px) and (max-width: 1231px) {
+  .background-xs, .background-sm, .background-lg {
+    min-height: 100% !important;
+    background: transparent !important;
+  }
+}
+
+
 @media (min-width: 1232px) {
-  .background-lg {
-    display: block;
+  .background-xs, .background-sm, .background-md {
+    min-height: 100% !important;
+    background: transparent !important;
   }
 }

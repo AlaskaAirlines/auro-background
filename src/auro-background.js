@@ -45,8 +45,8 @@ class AuroBackground extends LitElement {
   constructor() {
     super();
     this.background = "transparent";
-    this.minHeight = "100%";
-
+    this.minHeight = "250px";
+    this.minHeightSm = "100%";
   }
 
   // function to define props used within the scope of this component
@@ -76,31 +76,35 @@ class AuroBackground extends LitElement {
   render() {
 
     this.backgroundStyles = {
-      ...this.background && {'background': this.background},
-      ...this.minHeight && {'min-height': this.minHeight,
-        'width': 'auto'}
+      'background': this.background,
+      'min-height': this.minHeight,
     };
     this.backgroundSmallStyles = {
-      ...this.backgroundSm && {'background': this.backgroundSm},
-      ...this.minHeightSm && {'min-height': this.minHeightSm,
-        'width': 'auto'}
+      'background': this.backgroundSm ? this.backgroundSm : this.background,
+      'min-height': this.minHeightSm ? this.minHeightSm : this.minHeight,
     };
     this.backgroundMediumStyles = {
-      ...this.backgroundSm && {'background': this.backgroundSm},
-      ...this.minHeightSm && {'min-height': this.minHeightSm,
-        'width': 'auto'}
+      'background': this.backgroundMd ? this.backgroundMd : this.backgroundSmallStyles['background'],
+      'min-height': this.minHeightMd ? this.minHeightMd : this.backgroundSmallStyles['min-height'],
     };
     this.backgroundLargeStyles = {
-      ...this.backgroundSm && {'background': this.backgroundSm},
-      ...this.minHeightSm && {'min-height': this.minHeightSm,
-        'width': 'auto'}
+      'background': this.backgroundLg ? this.backgroundLg : this.backgroundMediumStyles['background'],
+      'min-height': this.minHeightLg ? this.minHeightLg : this.backgroundMediumStyles['min-height'],
     };
 
+    console.warn(this.backgroundStyles);
+    console.warn(this.backgroundSmallStyles);
+
     return html`
-      <div class="bg" style=${styleMap(this.backgroundStyles)}><slot></slot></div>
-      ${this.backgroundSm && html`<div class="sized-background background-sm" style=${styleMap(this.backgroundSmallStyles)}><slot></slot></div>`}
-      ${this.backgroundMd && html`<div class="sized-background background-md" style=${styleMap(this.backgroundMediumStyles)}><slot></slot></div>`}
-      ${this.backgroundLg && html`<div class="sized-background background-lg" style=${styleMap(this.backgroundLargeStyles)}><slot></slot></div>`}
+      <div class="background background-xs" style=${styleMap(this.backgroundStyles)}>
+        <div class="background background-sm" style=${styleMap(this.backgroundSmallStyles)}>
+          <div class="background background-md" style=${styleMap(this.backgroundMediumStyles)}>
+            <div class="background background-lg" style=${styleMap(this.backgroundLargeStyles)}>
+              <slot></slot>
+            </div>
+          </div>
+        </div>
+      </div>
     `;
   }
 }
