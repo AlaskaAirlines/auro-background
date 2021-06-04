@@ -8,7 +8,7 @@
     "================================================================================"
   ],
   "name": "@aurolabs/auro-background",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "auro-background HTML custom element",
   "repository": {
     "type": "git",
