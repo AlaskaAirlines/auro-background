@@ -21,28 +21,28 @@
 @media (max-width: 659px) {
   .background-sm, .background-md, .background-lg {
     height: 100% !important;
-    min-height: 0%;
+    min-height: 0% !important;
     background: transparent !important;
   }
 }
 @media (min-width: 660px) and (max-width: 1023px) {
   .background-xs, .background-md, .background-lg {
     height: 100% !important;
-    min-height: 0%;
+    min-height: 0% !important;
     background: transparent !important;
   }
 }
 @media (min-width: 1024px) and (max-width: 1231px) {
   .background-xs, .background-sm, .background-lg {
     height: 100% !important;
-    min-height: 0%;
+    min-height: 0% !important;
     background: transparent !important;
   }
 }
 @media (min-width: 1232px) {
   .background-xs, .background-sm, .background-md {
     height: 100% !important;
-    min-height: 0%;
+    min-height: 0% !important;
     background: transparent !important;
   }
 }
