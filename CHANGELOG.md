@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.2.5](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.4...v1.2.5) (2021-06-05)
+
+
+### Bug Fixes
+
+* height change ([d2532a2](https://github.com/AlaskaAirlines/aurolabs-background/commit/d2532a27ddfb23de00077bab136304a29adea182))
+
 ## [1.2.4](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.3...v1.2.4) (2021-06-05)
 
 
