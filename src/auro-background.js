@@ -77,19 +77,19 @@ class AuroBackground extends LitElement {
 
     this.backgroundStyles = {
       'background': this.background,
-      'min-height': this.minHeight,
+      'height': this.minHeight,
     };
     this.backgroundSmallStyles = {
       'background': this.backgroundSm ? this.backgroundSm : this.background,
-      'min-height': this.minHeightSm ? this.minHeightSm : this.minHeight,
+      'height': this.minHeightSm ? this.minHeightSm : this.minHeight,
     };
     this.backgroundMediumStyles = {
       'background': this.backgroundMd ? this.backgroundMd : this.backgroundSmallStyles.background,
-      'min-height': this.minHeightMd ? this.minHeightMd : this.backgroundSmallStyles['min-height'],
+      'height': this.minHeightMd ? this.minHeightMd : this.backgroundSmallStyles['min-height'],
     };
     this.backgroundLargeStyles = {
       'background': this.backgroundLg ? this.backgroundLg : this.backgroundMediumStyles.background,
-      'min-height': this.minHeightLg ? this.minHeightLg : this.backgroundMediumStyles['min-height'],
+      'height': this.minHeightLg ? this.minHeightLg : this.backgroundMediumStyles['min-height'],
     };
 
     return html`
