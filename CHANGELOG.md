@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.2.6](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.5...v1.2.6) (2021-06-05)
+
+
+### Bug Fixes
+
+* importantify min-height ([5dd5d66](https://github.com/AlaskaAirlines/aurolabs-background/commit/5dd5d664bd1515590df2ab9c16855bc012f9752f))
+
 ## [1.2.5](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.4...v1.2.5) (2021-06-05)
 
 
