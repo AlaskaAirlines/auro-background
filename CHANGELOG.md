@@ -1,5 +1,14 @@
 # Semantic Release Automated Changelog
 
+## [1.2.3](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.2...v1.2.3) (2021-06-05)
+
+
+### Bug Fixes
+
+* attempt using encapsulated divs for other sizes ([e6d9585](https://github.com/AlaskaAirlines/aurolabs-background/commit/e6d9585eb054eee197996930f0aefc114f0f311e))
+* linting issues ([e297a2f](https://github.com/AlaskaAirlines/aurolabs-background/commit/e297a2fae34d9f54f5b07eed32e881f00371fe4a))
+* use height instead of min-height ([1ff22b7](https://github.com/AlaskaAirlines/aurolabs-background/commit/1ff22b742a7007d0a71b1891e99e2c4936f5294d))
+
 ## [1.2.2](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.1...v1.2.2) (2021-06-04)
 
 
