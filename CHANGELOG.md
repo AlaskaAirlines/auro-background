@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.2.4](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.3...v1.2.4) (2021-06-05)
+
+
+### Bug Fixes
+
+* use height instead of min-height everywhere ([9bcdc53](https://github.com/AlaskaAirlines/aurolabs-background/commit/9bcdc53b2401bc7dee2d1629416668474074bf6a))
+
 ## [1.2.3](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.2...v1.2.3) (2021-06-05)
 
 
