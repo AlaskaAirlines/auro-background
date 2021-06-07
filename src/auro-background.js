@@ -33,10 +33,10 @@ const styleMap = (style) => Object.entries(style).reduce((styleString, [
  * @attr {String} backgroundSm - Applies the css background to screen sizes 660px and above
  * @attr {String} backgroundMd - Applies the css background to screen sizes 1024px and above
  * @attr {String} backgroundLg - Applies the css background screen sizes 1232px and above
- * @attr {String} minHeight - In some implementations a minimum height is needed for the background to show
- * @attr {String} minHeightSm - In some implementations a minimum height is needed this applies to screen sizes 660px and above
- * @attr {String} minHeightMd - In some implementations a minimum height is needed this applies to screen sizes 1024px and above
- * @attr {String} minHeightLg - In some implementations a minimum height is needed this applies to screen sizes 1234px and above
+ * @attr {String} height - In some implementations a minimum height is needed for the background to show
+ * @attr {String} heightSm - In some implementations a minimum height is needed this applies to screen sizes 660px and above
+ * @attr {String} heightMd - In some implementations a minimum height is needed this applies to screen sizes 1024px and above
+ * @attr {String} heightLg - In some implementations a minimum height is needed this applies to screen sizes 1234px and above
  */
 
 // build the component class
@@ -45,8 +45,8 @@ class AuroBackground extends LitElement {
   constructor() {
     super();
     this.background = "transparent";
-    this.minHeight = "250px";
-    this.minHeightSm = "100%";
+    this.height = "250px";
+    this.heightSm = "100%";
   }
 
   // function to define props used within the scope of this component
@@ -57,10 +57,10 @@ class AuroBackground extends LitElement {
       backgroundSm: { type: String },
       backgroundMd: { type: String },
       backgroundLg: { type: String },
-      minHeight: { type: String },
-      minHeightSm: { type: String },
-      minHeightMd: { type: String },
-      minHeightLg: { type: String },
+      height: { type: String },
+      heightSm: { type: String },
+      heightMd: { type: String },
+      heightLg: { type: String },
 
     };
   }
@@ -77,19 +77,19 @@ class AuroBackground extends LitElement {
 
     this.backgroundStyles = {
       'background': this.background,
-      'min-height': this.minHeight,
+      'height': this.height,
     };
     this.backgroundSmallStyles = {
       'background': this.backgroundSm ? this.backgroundSm : this.background,
-      'min-height': this.minHeightSm ? this.minHeightSm : this.minHeight,
+      'height': this.heightSm ? this.heightSm : this.height,
     };
     this.backgroundMediumStyles = {
       'background': this.backgroundMd ? this.backgroundMd : this.backgroundSmallStyles.background,
-      'min-height': this.minHeightMd ? this.minHeightMd : this.backgroundSmallStyles['min-height'],
+      'height': this.heightMd ? this.heightMd : this.backgroundSmallStyles.height,
     };
     this.backgroundLargeStyles = {
       'background': this.backgroundLg ? this.backgroundLg : this.backgroundMediumStyles.background,
-      'min-height': this.minHeightLg ? this.minHeightLg : this.backgroundMediumStyles['min-height'],
+      'height': this.heightLg ? this.heightLg : this.backgroundMediumStyles.height,
     };
 
     return html`
