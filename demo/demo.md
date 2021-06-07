@@ -125,7 +125,7 @@ In this example the `<auro-background>` wraps the component and is also used in 
     </span>
   </div>
     <div class="bannerImage">
-      <auro-background background="#d3c7ad url(https://images.unsplash.com/photo-1535853563674-dbdba022f845?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1900&q=80) center center/cover no-repeat fixed;" backgroundSm="red"></auro-background>
+      <auro-background background="#d3c7ad url(https://images.unsplash.com/photo-1535853563674-dbdba022f845?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1900&q=80) center center/cover no-repeat fixed"></auro-background>
     </div>
   </div>
   </auro-background>
