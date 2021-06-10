@@ -10,7 +10,12 @@ The `<auro-background>` element should be used in situations where users may:
 - As a background to an existing code block such as a hero or banner
 
 ## How to use
-The auro-background component takes 2 main properties a height and a background plus a seperate property for each supported breakpoint.
+The auro-background component takes 2 main properties a `height` and a `background` that serve as the default at all breapoints.  Plus there is a seperate property for each supported breakpoint (`heightsm`, `heightmd`, `heightlg`, `backgroundsm`, `backgroundmd`, `backgroundlg`).  If you don't set specific size propery the smaller property will be used.
+
+These properties map to the css properties of `height` and the compound css `background` property so anything you can do with css you can do here.  When wrapping a component be sure to check each breakpoint and ensure the proper height is set.
+
+For the background a css <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/background-image">generator</auro-hyperlink> is helpful.
+
 
 ## Examples
 
