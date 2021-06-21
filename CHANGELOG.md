@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [1.3.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.6...v1.3.0) (2021-06-07)
+
+
+### Bug Fixes
+
+* rebuilds API docs and updates unit test ([e0bc519](https://github.com/AlaskaAirlines/aurolabs-background/commit/e0bc519a44ed7a52cc1190d67a9da7793efce5af))
+
+
+### Features
+
+* use height instead of min-heaght ([73599fd](https://github.com/AlaskaAirlines/aurolabs-background/commit/73599fd8704ca81ec625574335c7075a48a3ed3b))
+
 ## [1.2.6](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.5...v1.2.6) (2021-06-05)
 
 
