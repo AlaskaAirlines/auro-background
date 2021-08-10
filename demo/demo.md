@@ -32,7 +32,7 @@ In this example the `<auro-background>` wraps the component and is also used in 
     <auro-hyperlink primary cta href="#" target="_blank" >Reprehenderit</auro-hyperlink>
     </div>
   </auro-banner>
-  </auro-background>
+</auro-background>
 
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
@@ -48,7 +48,7 @@ In this example the `<auro-background>` wraps the component and is also used in 
     <auro-hyperlink primary cta href="#" target="_blank" >Reprehenderit</auro-hyperlink>
     </div>
   </auro-banner>
-  </auro-background>
+</auro-background>
 ```
 
 </auro-accordion>
@@ -83,27 +83,27 @@ In this example the `<auro-background>` wraps the component and is also used in 
 In these examples the `<auro-background>` wraps the `<auro-banner>`component and is also used in a slot and expands to take up with space of the container.
 
 <auro-background height="initial" background="var(--auro-color-background-darkest); margin-bottom:2rem">
-<auro-banner inset overlay overlayBg="var(--auro-color-brand-neutral-400)">
-<div slot="graphic">
-  <auro-background
-    height="215px"
-    heightsm="390px"
-    heightmd="302px"
-    backgroundsm="#b4cdd2 url(https://images.unsplash.com/photo-1500304624028-5b2641868ade?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80) right center/cover no-repeat;"
-  ></auro-background>
-  </div>
-  <div slot="content">
-    <div class="offer">
-    <auro-header level="2" display="800" margin="both" size="none" style="color:white">Lorem ipsum dolor</auro-header>
-      <div style="color:white; margin-bottom: 1rem">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus, quod aperiam a aut fuga qui eos reprehenderit facilis vero.
+  <auro-banner inset overlay overlayBg="var(--auro-color-brand-neutral-400)">
+  <div slot="graphic">
+    <auro-background
+      height="215px"
+      heightsm="390px"
+      heightmd="302px"
+      backgroundsm="#b4cdd2 url(https://images.unsplash.com/photo-1500304624028-5b2641868ade?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80) right center/cover no-repeat;"
+    ></auro-background>
+    </div>
+    <div slot="content">
+      <div class="offer">
+      <auro-header level="2" display="800" margin="both" size="none" style="color:white">Lorem ipsum dolor</auro-header>
+        <div style="color:white; margin-bottom: 1rem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus, quod aperiam a aut fuga qui eos reprehenderit facilis vero.
+        </div>
       </div>
     </div>
-  </div>
-  <span slot="overlay">
-    <auro-icon category="social" name="instagram" customSize customColor style="color: var(--auro-color-base-white); width: 5rem"></auro-icon>
-  </span>
-</auro-banner>
+    <span slot="overlay">
+      <auro-icon category="social" name="instagram" customSize customColor style="color: var(--auro-color-base-white); width: 5rem"></auro-icon>
+    </span>
+  </auro-banner>
 </auro-background>
 
 
