@@ -15,34 +15,49 @@
 
 .background {
   width: auto;
+  width: var(--width); /* stylelint-disable-line declaration-block-no-duplicate-properties */
+
   height: inherit;
+  height: var(--height); /* stylelint-disable-line declaration-block-no-duplicate-properties */
+
+  background: var(--background);
+
+  @include auro_breakpoint--sm {
+    width: var(--widthSm);
+    height: var(--heightSm);
+
+    background: var(--backgroundSm);
+  }
+  @include auro_breakpoint--md {
+    width: var(--widthMd);
+    height: var(--heightMd);
+
+    background: var(--backgroundMd);
+  }
+  @include auro_breakpoint--lg {
+    width: var(--widthLg);
+    height: var(--heightLg);
+
+    background: var(--backgroundLg);
+  }
 }
 
-@media (max-width: 659px) {
-  .background-sm, .background-md, .background-lg {
-    height: 100% !important;
-    min-height: 0% !important;
-    background: transparent !important;
+:host([inset]) {
+  .background {
+    padding: var(--auro-size-md);
+
+    @include auro_breakpoint--sm {
+      padding: var(--auro-size-lg);
+    }
   }
 }
-@media (min-width: 660px) and (max-width: 1023px) {
-  .background-xs, .background-md, .background-lg {
-    height: 100% !important;
-    min-height: 0% !important;
-    background: transparent !important;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1231px) {
-  .background-xs, .background-sm, .background-lg {
-    height: 100% !important;
-    min-height: 0% !important;
-    background: transparent !important;
-  }
-}
-@media (min-width: 1232px) {
-  .background-xs, .background-sm, .background-md {
-    height: 100% !important;
-    min-height: 0% !important;
-    background: transparent !important;
+
+:host([insetXl]) {
+  .background {
+    padding: var(--auro-size-xl);
+
+    @include auro_breakpoint--sm {
+      padding: var(--auro-size-xxl);
+    }
   }
 }
