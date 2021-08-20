@@ -39,7 +39,12 @@ import "@aurolabs/auro-background";
 **Reference component in HTML**
 
 ```html
-<auro-background>Hello World</auro-background>
+<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
+  <div style="color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <auro-header level="2" display="600">View all destinations</auro-header>
+    <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
+  </div>
+</auro-background>
 ```
 
 ## Install bundled assets from CDN
@@ -64,16 +69,20 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 
 The `<auro-background>` element should be used in situations where users may:
 
-* ...
-* ...
-* ...
+* In a slot in other auro components
+* As a background to an existing code block such as a hero
 
 ## API Code Examples
 
 Default auro-background
 
 ```html
-<auro-background>Hello World</auro-background>
+<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
+  <div style="color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <auro-header level="2" display="600">View all destinations</auro-header>
+    <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
+  </div>
+</auro-background>
 ```
 
 ## Development

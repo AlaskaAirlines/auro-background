@@ -4,7 +4,7 @@ import '../src/auro-background.js';
 describe('auro-background', () => {
   it('set all the properties and attributes', async () => {
     const el = await fixture(html`
-      <auro-background height="10px" heightsm="11px" heightmd="12px" heightlg="13px" background="red" backgroundsm="blue" backgroundmd="purple" backgroundlg="magenta"></auro-background>
+      <auro-background height="10px" heightsm="11px" heightmd="12px" heightlg="13px" width="10px" widthsm="11px" widthmd="12px" widthlg="13px" bg="red" bgsm="blue" bgmd="purple" bglg="magenta"></auro-background>
     `);
 
     expect(true).to.be.true;
