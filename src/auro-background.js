@@ -21,12 +21,12 @@ const styleMap = (style) => Object.entries(style).reduce((styleString, [
 
 
   return `${styleString}${propertyName}:${propValue};`;
-}, '')
+}, '');
 
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
-* auro-background provides users a way to add a background image or color block incuding a gradient.
+ * Auro-background provides users a way to add a background image or color block incuding a gradient.
  *
  * @attr {Boolean} fixed - Uses fixed pixel values for element shape
  * @attr {String} background - Applies the css background to all screen sizes

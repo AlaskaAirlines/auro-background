@@ -56,8 +56,8 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@latest/dist/bundled/essentials.css" />
 
-<script src="https://unpkg.com/@alaskaairux/auro-background@latest/dist/auro-background__bundled.js" type="module"></script>
-<script src="https://unpkg.com/@alaskaairux/auro-background@latest/dist/auro-background__bundled.es5.js" nomodule></script>
+<script src="https://unpkg.com/@aurolabs/auro-background@latest/dist/auro-background__bundled.js" type="module"></script>
+<script src="https://unpkg.com/@aurolabs/auro-background@latest/dist/auro-background__bundled.es5.js" nomodule></script>
 ```
 
 ## auro-background use cases
@@ -96,11 +96,20 @@ $ npm run serve
 
 Open [localhost:8000](http://localhost:8000/)
 
+### API generation
+
+The custom element API file is generated in the build and committed back to the repo with a version change. If the API doc has changed without a version change, author's are to run `npm run build:api` to generate the doc and commit to version control.
+
 ### Testing
+
 Automated tests are required for every Auro component. See `.\test\auro-background.test.js` for the tests for this component. Run `npm test` to run the tests and check code coverage. Tests must pass and meet a certain coverage threshold to commit. See [the testing documentation](https://auro.alaskaair.com/support/tests) for more details.
+
+### Bundled assets
+
+Bundled assets are only generated in the remote and not merged back to this repo. To review and/or test a bundled asset locally, run `$ npm run bundler` to generate assets.
 
 ### Demo deployment
 
 To deploy a demo version of the component for review, run `npm run demo:build` to create a `./build` directory that can be pushed to any static server.
 
-<small>Built from WC-Generator v3.1.1</small>
+<small>Built from WC-Generator v3.7.4</small>
