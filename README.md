@@ -1,6 +1,6 @@
 # Background
 
-`<auro-background>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the purpose of ...
+`<auro-background>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for use as a way to show an image or background color around a block of code or in a slot when used in conjuction with other web components like `auro-banner`.  It is esentially an alertnative to using custom css background css where your css styles are automicatlly scoped and media queries built in using a mobile first philosophy.
 
 ## UI development browser support
 
