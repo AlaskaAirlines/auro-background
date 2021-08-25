@@ -13,22 +13,22 @@ import { styleMap } from 'lit-html/directives/style-map';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
- * Auro-background provides users a way to add a background image or color block incuding a gradient.
+ * Auro-background provides users a way to add a background image or color block including a gradient.
  *
- * @attr {String} bg - Applies the css background to all screen sizes
- * @attr {String} bgSm - Applies the css background to screen sizes 660px and above
- * @attr {String} bgMd - Applies the css background to screen sizes 1024px and above
- * @attr {String} bgLg - Applies the css background screen sizes 1232px and above
- * @attr {String} height - In some implementations a minimum height is needed for the background to show
- * @attr {String} heightSm - In some implementations a minimum height is needed this applies to screen sizes 660px and above
- * @attr {String} heightMd - In some implementations a minimum height is needed this applies to screen sizes 1024px and above
- * @attr {String} heightLg - In some implementations a minimum height is needed this applies to screen sizes 1234px and above
- * @attr {String} width - In some implementations a specific width is needed for the background to show
- * @attr {String} widthSm - In some implementations a specific width is needed this applies to screen sizes 660px and above
- * @attr {String} widthMd - In some implementations a specific width is needed this applies to screen sizes 1024px and above
- * @attr {String} widthLg - In some implementations a specific width is needed this applies to screen sizes 1234px and above
- * @attr {Boolean} inset - Sets padding inside the auro-background element surrounding the slot content
- * @attr {Boolean} insetXl - Sets a large amount of padding inside the auro-background element surrounding the slot content
+ * @attr {String} bg - Applies all breakpoints
+ * @attr {String} bgSm - `breakpoint--sm` and above
+ * @attr {String} bgMd - `breakpoint-md` and above
+ * @attr {String} bgLg - `breakpoint-lg` and above
+ * @attr {String} height - Apply minimum height value
+ * @attr {String} heightSm - Apply minimum height for `breakpoint-sm` and above
+ * @attr {String} heightMd - Apply minimum height for `breakpoint-md` and above
+ * @attr {String} heightLg - Apply minimum height for `breakpoint-lg` and above
+ * @attr {String} width - Define custom width
+ * @attr {String} widthSm - Define custom width for `breakpoint-sm` and above
+ * @attr {String} widthMd - Define custom with for `breakpoint-md` and above
+ * @attr {String} widthLg - Define custom width for `breakpoint-lg` and above
+ * @attr {Boolean} inset - Apply internal padding
+ * @attr {Boolean} insetXl - Apply additional internal padding
  */
 
 // build the component class
