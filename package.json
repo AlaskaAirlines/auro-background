@@ -12,7 +12,7 @@
   "description": "auro-background HTML custom element",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlaskaAirlines/auro-background"
+    "url": "https://github.com/AlaskaAirlines/aurolabs-background"
   },
   "main": "index.js",
   "license": "Apache-2.0",
@@ -30,16 +30,10 @@
     "@alaskaairux/design-tokens": "^3.3.0",
     "@alaskaairux/webcorestylesheets": "^3.6.2",
     "@aurodesignsystem/eslint-config": "^1.2.0",
-    "@babel/core": "^7.15.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "@babel/runtime": "^7.15.3",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@open-wc/testing": "^2.5.33",
     "@rollup/plugin-alias": "^3.1.5",
-    "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@semantic-release/changelog": "^5.0.1",
@@ -49,7 +43,6 @@
     "@web/test-runner": "^0.13.16",
     "@webcomponents/webcomponentsjs": "^2.6.0",
     "autoprefixer": "^10.3.3",
-    "babel-loader": "^8.2.2",
     "compression": "^1.7.4",
     "concat": "^1.0.3",
     "copyfiles": "^2.4.1",

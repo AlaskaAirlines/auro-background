@@ -49,9 +49,7 @@ import "@aurolabs/auro-background";
 
 ## Install bundled assets from CDN
 
-In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Two bundles are available -- `auro-background__bundled.js` for modern browsers and `auro-background__bundled.es5.js` for legacy browsers (including IE11).
-
-Since the legacy bundle includes many polyfills that are not needed by modern browsers, we recommend you load these bundles using [differential serving](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) so that the browser only loads the bundle it needs. To accomplish this, the script tag for the modern bundle should have `type="module"` and the script tag for the legacy bundle should have the `nomodule` attribute. See the example below.
+In cases where the project is not able to process JS assets, there are pre-processed assets available for use.
 
 ### Bundle example code
 
@@ -62,7 +60,6 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@latest/dist/bundled/essentials.css" />
 
 <script src="https://unpkg.com/@aurolabs/auro-background@latest/dist/auro-background__bundled.js" type="module"></script>
-<script src="https://unpkg.com/@aurolabs/auro-background@latest/dist/auro-background__bundled.es5.js" nomodule></script>
 ```
 
 ## auro-background use cases
