@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [1.4.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.3.0...v1.4.0) (2021-08-26)
+
+
+### Bug Fixes
+
+* **docs:** update readme, update depdencies; trigger build ([d84ec5d](https://github.com/AlaskaAirlines/aurolabs-background/commit/d84ec5ddefa2a25ba7b2fc40fcd3ee62aa5038c6))
+
+
+### Features
+
+* remove support for IE bundle ([125339e](https://github.com/AlaskaAirlines/aurolabs-background/commit/125339e535879acd8dc65aee838a58653b6ccac4))
+
 # [1.3.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.2.6...v1.3.0) (2021-06-07)
 
 
