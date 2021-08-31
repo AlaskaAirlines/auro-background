@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.4.1](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.4.0...v1.4.1) (2021-08-31)
+
+
+### Bug Fixes
+
+* **readme:** add missing info to readme ([1967423](https://github.com/AlaskaAirlines/aurolabs-background/commit/19674232cfae775d30f40f72efaf36d7351a21e6))
+
 # [1.4.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.3.0...v1.4.0) (2021-08-26)
 
 
