@@ -1,6 +1,6 @@
 # auro-background
 
-`auro-background` is a way to show an image or background color around a block of code or in a slot when used in conjuction with other web components like `auro-banner`.  It is esentially an alertnative to using custom css background css where your css styles are automicatlly scoped and media queries built in using a mobile first philosophy.
+The `auro-background` element is an easy-to-use mobile-first alternative to writing custom CSS for background colors or images with automatically scoped media queries.  Use independently or in the slot of another element such as `auro-banner`.
 
 ## auro-background use cases
 
@@ -10,9 +10,9 @@ The `<auro-background>` element should be used in situations where users may:
 - As a background to an existing code block such as a hero
 
 ## How to use
-The auro-background component accepts 4 properties - `bg`, `height`, `width`, `inset` and `insetXl` that serve as the default at all breakpoints. `height`, `width`, `inset` and `insetXl` are not required and will sizing will scale to the content when ommited. Additionally, there is a seperate property for each supported breakpoint (`bgsm`, `bgmd`, `bglg`, `heightsm`, `heightmd`, `heightlg`, `widthsm`, `widthmd`, `widthlg`).  If you don't set specific size property the smaller property will be used.
+The auro-background component accepts 4 properties - `bg`, `height`, `width`, and `inset` that serve as the default at all breakpoints. `height`, `width`, and `inset` are not required and sizing will scale to the content when ommited. Additionally, there is a seperate property for each supported breakpoint (`bgsm`, `bgmd`, `bglg`, `heightsm`, `heightmd`, `heightlg`, `widthsm`, `widthmd`, `widthlg`).  If you don't set specific size property the smaller property will be used.
 
-These properties map to the compound CSS `background` property and CSS properties of `height`, `width`. Anything you can do within the scope of those CSS rules you can do here. `inset` and `insetxl` apply padding to the element.
+These properties map to the compound CSS `background` property and CSS properties of `height`, `width`, and `padding`. Anything you can do within the scope of those CSS rules you can do here.
 
 For the background a css <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/background-image">generator</auro-hyperlink> is helpful.
 
@@ -47,12 +47,14 @@ This example shows a simple `auro-background` using only the `bg` attribute. The
 </auro-accordion>
 
 
-### Use inset or insetXl attribute to add padding
+### Use inset attribute to add padding
 
-This example uses `insetXl` to add padding inside the background.
+This example uses `inset="xl"` to add padding inside the background element. Valid attribute values include `none`, `xxxs`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, `xxxl` or any CSS value which is valid for the CSS `padding` rule (e.g. `1rem`). When using a custom CSS rule do not include a semi-colon at at the end of the string (e.g. `1rem` is valid, `1rem;` is invalid).
+
+Inset values may also be declared folloing the same rules as `inset` for each breakpoint using the `insetSm`, `insetMd` and `insetLg` attributes.
 
 <div class="exampleWrapper">
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" insetXl>
+<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" inset="xl">
   <div style="color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -64,7 +66,7 @@ This example uses `insetXl` to add padding inside the background.
   <span slot="trigger">See code</span>
 
 ```html
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" insetXl>
+<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" inset="xl">
   <div style="color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -77,7 +79,7 @@ This example uses `insetXl` to add padding inside the background.
 
 ### Using fixed height and width
 
-The `height` and `width` attributes may be used to set custom dimensions of `auro-background`. Attributes are available to set different sizes at each breakpoint as well (`heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, `widthLg`).
+The `height` and `width` attributes may be used to set custom dimensions. Attributes are available to set different sizes at each breakpoint (`heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, `widthLg`).
 
 <div class="exampleWrapper">
 <auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" height="350px" width="300px">
@@ -112,7 +114,7 @@ You may specificy different `bg` values for each breakpoint using `bgSm`, `bgMd`
   bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat"
   bgMd="url(https://sitecore-prod-cd-westus2.azurewebsites.net/-/media/Images/homepage-tiles/email-deals-holiday/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
   bgLg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/common-assets/destinations/hawaii-bg) center center/cover no-repeat"
-  insetXl>
+  inset="xl">
   <div style="color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -128,7 +130,7 @@ You may specificy different `bg` values for each breakpoint using `bgSm`, `bgMd`
   bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat"
   bgMd="url(https://sitecore-prod-cd-westus2.azurewebsites.net/-/media/Images/homepage-tiles/email-deals-holiday/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
   bgLg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/common-assets/destinations/hawaii-bg) center center/cover no-repeat"
-  insetXl>
+  inset="xl">
   <div style="color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -142,7 +144,7 @@ You may specificy different `bg` values for each breakpoint using `bgSm`, `bgMd`
 ## Additional Examples
 
 <div class="exampleWrapper">
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/common-assets/destinations/hawaii-bg) center center/cover no-repeat" inset width="300px">
+<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/common-assets/destinations/hawaii-bg) center center/cover no-repeat" inset="md" width="300px">
   <div style="color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; justify-content: center;">
     <img alt="" style="width:150px;" src="https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/pattern-library/banner-deals/40K-cc-100-dollar-statement-credit">
     <auro-header level="2" display="600">Alaska Airlines Visa Signature® card</auro-header>
@@ -163,7 +165,7 @@ You may specificy different `bg` values for each breakpoint using `bgSm`, `bgMd`
   <span slot="trigger">See code</span>
 
 ```html
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/common-assets/destinations/hawaii-bg) center center/cover no-repeat" inset width="300px">
+<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/common-assets/destinations/hawaii-bg) center center/cover no-repeat" inset="md" width="300px">
   <div style="color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; justify-content: center;">
     <img alt="" style="width:150px;" src="https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/pattern-library/banner-deals/40K-cc-100-dollar-statement-credit">
     <auro-header level="2" display="600">Alaska Airlines Visa Signature® card</auro-header>
@@ -183,7 +185,7 @@ You may specificy different `bg` values for each breakpoint using `bgSm`, `bgMd`
 </auro-accordion>
 
 <div class="exampleWrapper">
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad1) center top/cover no-repeat" height="500px" width="400px" inset>
+<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad1) center top/cover no-repeat" height="500px" width="400px" inset="md">
   <div style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
     <auro-header level="2" display="600">Explore our Route Map</auro-header>
     <p style="margin-bottom:12px;">Visit amazing destinations like, Costa Rica, Hawaii, or Mexico</p>
@@ -196,7 +198,7 @@ You may specificy different `bg` values for each breakpoint using `bgSm`, `bgMd`
   <span slot="trigger">See code</span>
 
 ```html
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad1) center top/cover no-repeat" height="500px" width="400px" inset>
+<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad1) center top/cover no-repeat" height="500px" width="400px" inset="md">
   <div style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
     <auro-header level="2" display="600">Explore our Route Map</auro-header>
     <p style="margin-bottom:12px;">Visit amazing destinations like, Costa Rica, Hawaii, or Mexico</p>
