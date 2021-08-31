@@ -3,9 +3,6 @@
 
 // ---------------------------------------------------------------------
 
-/* stylelint-disable declaration-no-important */
-
-
 // Import Auro tokens
 @import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SCSSVariables';
 @import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SassCustomProperties';
@@ -20,11 +17,15 @@
   height: inherit;
   height: var(--height); /* stylelint-disable-line declaration-block-no-duplicate-properties */
 
+  padding: var(--inset);
+
   background: var(--background);
 
   @include auro_breakpoint--sm {
     width: var(--widthSm);
     height: var(--heightSm);
+
+    padding: var(--insetSm);
 
     background: var(--backgroundSm);
   }
@@ -32,32 +33,16 @@
     width: var(--widthMd);
     height: var(--heightMd);
 
+    padding: var(--insetMd);
+
     background: var(--backgroundMd);
   }
   @include auro_breakpoint--lg {
     width: var(--widthLg);
     height: var(--heightLg);
 
+    padding: var(--insetMd);
+
     background: var(--backgroundLg);
-  }
-}
-
-:host([inset]) {
-  .background {
-    padding: var(--auro-size-md);
-
-    @include auro_breakpoint--sm {
-      padding: var(--auro-size-lg);
-    }
-  }
-}
-
-:host([insetXl]) {
-  .background {
-    padding: var(--auro-size-xl);
-
-    @include auro_breakpoint--sm {
-      padding: var(--auro-size-xxl);
-    }
   }
 }

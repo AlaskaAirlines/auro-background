@@ -27,8 +27,10 @@ import { styleMap } from 'lit-html/directives/style-map';
  * @attr {String} widthSm - Define custom width for `breakpoint-sm` and above
  * @attr {String} widthMd - Define custom with for `breakpoint-md` and above
  * @attr {String} widthLg - Define custom width for `breakpoint-lg` and above
- * @attr {Boolean} inset - Apply internal padding
- * @attr {Boolean} insetXl - Apply additional internal padding
+ * @attr {String} inset - Apply internal padding
+ * @attr {String} insetSm - Apply internal padding for `breakpoint-sm` and above
+ * @attr {String} insetMd - Apply internal padding for `breakpoint-md` and above
+ * @attr {String} insetLg - Apply internal padding for `breakpoint-lg` and above
  */
 
 // build the component class
@@ -49,8 +51,10 @@ class AuroBackground extends LitElement {
       widthSm: { type: String },
       widthMd: { type: String },
       widthLg: { type: String },
-      inset: { type: Boolean},
-      insetXl: { type: Boolean }
+      inset: { type: String},
+      insetSm: { type: String},
+      insetMd: { type: String},
+      insetLg: { type: String}
       /* eslint-enable sort-vars */
     };
   }
@@ -62,42 +66,56 @@ class AuroBackground extends LitElement {
     ];
   }
 
+  /**
+   * @private
+   * @param {string} inset Value from host attribute.
+   * @returns {string}
+   */
+  getInsetValues(inset) {
+    const validInsetPresets = [
+      'none',
+      'xxxs',
+      'xxs',
+      'xs',
+      'sm',
+      'md',
+      'lg',
+      'xl',
+      'xxl',
+      'xxxl'
+    ];
+
+    if (validInsetPresets.includes(inset)) {
+      return `var(--auro-size-${inset})`;
+    }
+
+    return inset;
+  }
+
   // function that renders the HTML and CSS into  the scope of the component
   render() {
-    /* eslint-disable sort-vars */
-    const bg = this.bg ? this.bg : 'transparent',
-      bgSm = this.bgSm ? this.bgSm : bg,
-      bgMd = this.bgMd ? this.bgMd : bgSm,
-      bgLg = this.bgLg ? this.bgLg : bgMd,
-      width = this.width ? this.width : 'auto',
-      widthSm = this.widthSm ? this.widthSm : width,
-      widthMd = this.widthMd ? this.widthMd : widthSm,
-      widthLg = this.widthLg ? this.widthLg : widthMd,
-      height = this.height ? this.height : 'auto',
-      heightSm = this.heightSm ? this.heightSm : height,
-      heightMd = this.heightMd ? this.heightMd : heightSm,
-      heightLg = this.heightLg ? this.heightLg : heightMd;
-    /* eslint-enable sort-vars */
-
     const styles = {
-      '--background': bg,
-      '--backgroundSm': bgSm,
-      '--backgroundMd': bgMd,
-      '--backgroundLg': bgLg,
-      '--width': width,
-      '--widthSm': widthSm,
-      '--widthMd': widthMd,
-      '--widthLg': widthLg,
-      '--height': height,
-      '--heightSm': heightSm,
-      '--heightMd': heightMd,
-      '--heightLg': heightLg
+      '--background': this.bg || 'transparent',
+      '--backgroundSm': this.bgSm || 'var(--background)',
+      '--backgroundMd': this.bgMd || 'var(--backgroundSm)',
+      '--backgroundLg': this.bgLg || 'var(--backgroundMd)',
+      '--width': this.width || 'auto',
+      '--widthSm': this.widthSm || 'var(--width)',
+      '--widthMd': this.widthMd || 'var(--widthSm)',
+      '--widthLg': this.widthLg || 'var(--widthMd)',
+      '--height': this.height || 'auto',
+      '--heightSm': this.heightSm || 'var(--height)',
+      '--heightMd': this.heightMd || 'var(--heightSm)',
+      '--heightLg': this.heightLg || 'var(--heightMd)',
+      '--inset': this.getInsetValues(this.inset) || 'var(--auro-size-none)',
+      '--insetSm': this.getInsetValues(this.insetSm) || 'var(--inset)',
+      '--insetMd': this.getInsetValues(this.insetMd) || 'var(--insetSm)',
+      '--insetLg': this.getInsetValues(this.insetLg) || 'var(--insetMd)',
     };
 
     return html`
       <div class="background" style=${styleMap(styles)}><slot></slot></div>
     `;
-    /* eslint-enable brace-style */
   }
 }
 
