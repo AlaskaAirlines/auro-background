@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.5.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.4.1...v1.5.0) (2021-09-08)
+
+
+### Features
+
+* **attribute:** change use of inset attribute ([c2e8418](https://github.com/AlaskaAirlines/aurolabs-background/commit/c2e841810cd2caa5400edd816ea37ca1708df446))
+
 ## [1.4.1](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.4.0...v1.4.1) (2021-08-31)
 
 
