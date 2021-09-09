@@ -1,27 +1,21 @@
 # auro-background
 
-The `auro-background` element is an easy-to-use mobile-first alternative to writing custom CSS for background colors or images with automatically scoped media queries.  Use independently or in the slot of another element such as `auro-banner`.
-
-## auro-background use cases
-
-The `<auro-background>` element should be used in situations where users may:
-
-- In a slot in other auro components
-- As a background to an existing code block such as a hero
+The `auro-background` element is an easy-to-use mobile-first alternative to writing custom CSS for background colors or images with automatically scoped media queries. Use independently or in the slot of another custom element such as `auro-banner`.
 
 ## How to use
-The auro-background component accepts 4 properties - `bg`, `height`, `width`, and `inset` that serve as the default at all breakpoints. `height`, `width`, and `inset` are not required and sizing will scale to the content when ommited. Additionally, there is a seperate property for each supported breakpoint (`bgsm`, `bgmd`, `bglg`, `heightsm`, `heightmd`, `heightlg`, `widthsm`, `widthmd`, `widthlg`).  If you don't set specific size property the smaller property will be used.
+
+The auro-background component accepts 4 properties - `bg`, `height`, `width`, and `inset` that serve as the default at all breakpoints. `height`, `width`, and `inset` are not required and sizing will scale to the content when omitted. Additionally, there is a separate property for each supported breakpoint (`bgsm`, `bgmd`, `bglg`, `heightsm`, `heightmd`, `heightlg`, `widthsm`, `widthmd`, `widthlg`).  If you don't set specific size property the smaller property will be used.
 
 These properties map to the compound CSS `background` property and CSS properties of `height`, `width`, and `padding`. Anything you can do within the scope of those CSS rules you can do here.
 
-For the background a css <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/background-image">generator</auro-hyperlink> is helpful.
+See <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/background-image">CSS Background Image Generator</auro-hyperlink> for a helpful code generation tool.
 
 
 ## Examples
 
 ### Basic auro-background
 
-This example shows a simple `auro-background` using only the `bg` attribute. The background sizes to fit the content.
+The following example illustrates the `auro-background` custom element using only the `bg` attribute.
 
 <div class="exampleWrapper">
 <auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
@@ -49,9 +43,11 @@ This example shows a simple `auro-background` using only the `bg` attribute. The
 
 ### Use inset attribute to add padding
 
-This example uses `inset="xl"` to add padding inside the background element. Valid attribute values include `none`, `xxxs`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, `xxxl` or any CSS value which is valid for the CSS `padding` rule (e.g. `1rem`). When using a custom CSS rule do not include a semi-colon at at the end of the string (e.g. `1rem` is valid, `1rem;` is invalid).
+The following example adds padding by using the `inset="xl"` property. The `inset` property support the following values; `none`, `xxxs`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, `xxxl` or any CSS value which is valid for the CSS `padding` rule (e.g. `1rem`).
 
-Inset values may also be declared folloing the same rules as `inset` for each breakpoint using the `insetSm`, `insetMd` and `insetLg` attributes.
+When using a custom CSS rule do not include a semi-colon at at the end of the string (e.g. `1rem` is valid, `1rem;` is invalid).
+
+Inset values may also be declared following the same rules as `inset` for each breakpoint property, i.e. `insetSm`, `insetMd` and `insetLg`.
 
 <div class="exampleWrapper">
 <auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" inset="xl">
@@ -77,9 +73,9 @@ Inset values may also be declared folloing the same rules as `inset` for each br
 </auro-accordion>
 
 
-### Using fixed height and width
+### Use fixed height and width
 
-The `height` and `width` attributes may be used to set custom dimensions. Attributes are available to set different sizes at each breakpoint (`heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, `widthLg`).
+The `height` and `width` properties can be used to set custom dimensions. Additional properties available per breakpoint, i.e. `heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, `widthLg`.
 
 <div class="exampleWrapper">
 <auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" height="350px" width="300px">
@@ -105,9 +101,9 @@ The `height` and `width` attributes may be used to set custom dimensions. Attrib
 </auro-accordion>
 
 
-### Changing backgrounds at breakpoints
+### Change backgrounds at breakpoints
 
-You may specificy different `bg` values for each breakpoint using `bgSm`, `bgMd` and `bgLg`.
+You may specify different `bg` values for each breakpoint using the `bgSm`, `bgMd` and `bgLg` properties.
 
 <div class="exampleWrapper">
 <auro-background

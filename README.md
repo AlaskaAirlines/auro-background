@@ -1,6 +1,6 @@
 # Background
 
-`<auro-background>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for use as a way to show an image or background color around a block of code or in a slot when used in conjuction with other web components like `auro-banner`.  It is esentially an alertnative to using custom css background css where your css styles are automicatlly scoped and media queries built in using a mobile first philosophy.
+`<auro-background>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for use as a way to show an image or background color around a block of code or in a slot when used in conjunction with other web components like `auro-banner`.  It is essentially an alternative to using custom css background css where your css styles are atomically scoped and media queries built in using a mobile first philosophy.
 
 ## UI development browser support
 
@@ -20,13 +20,7 @@ Installing as a direct, dev or peer dependency is up to the user installing the 
 
 ### Design Token CSS Custom Property dependency
 
-The use of any Auro custom element has a dependency on the [Auro Design Tokens](https://auro.alaskaair.com/getting-started/developers/design-tokens).
-
-### CSS Custom Property fallbacks
-
-[CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) are [not supported](https://auro.alaskaair.com/support/custom-properties) in older browsers. For this, fallback properties are pre-generated and included with the npm.
-
-Any update to the Auro Design Tokens will be immediately reflected with browsers that support CSS custom properties, legacy browsers will require updated components with pre-generated fallback properties.
+The use of any Auro custom element has a dependency on [Auro Design Tokens](https://auro.alaskaair.com/getting-started/developers/design-tokens).
 
 ### Define dependency in project component
 
@@ -53,7 +47,7 @@ In cases where the project is not able to process JS assets, there are pre-proce
 
 ### Bundle example code
 
-**NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. @latest is NOT aware of any MAJOR releases, use at your own risk.
+**NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. `@latest` is NOT aware of any MAJOR releases, use at your own risk.
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
@@ -66,12 +60,11 @@ In cases where the project is not able to process JS assets, there are pre-proce
 
 The `<auro-background>` element should be used in situations where users may:
 
-* In a slot in other auro components
-* As a background to an existing code block such as a hero
+* Insert a background image into any HTML block or slot element
 
-## API Code Examples
+## API Code Example
 
-Default auro-background
+Default `auro-background`
 
 ```html
 <auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
