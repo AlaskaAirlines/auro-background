@@ -3,13 +3,13 @@ repository:
   # See https://github.com/apps/settings for app settings
 
   # A short description of the repository that will show up on GitHub
-  description: Custom element that ....
+  description: Custom element for use as a way to show an image or background color around a block of code or in a slot when used in conjuction with other web components like `auro-banner`.
 
   # A URL with more information about the repository
   homepage: https://auro.alaskaair.com/components/auro/background
 
   # A comma-separated list of topics to set on the repository
-  topics: auro, design-system, custom-element, generator-v3-7-4
+  topics: auro, design-system, custom-element, generator-v3-8-1
 
   # Either `true` to enable issues for this repository, `false` to disable them.
   has_issues: true

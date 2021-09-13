@@ -1,5 +1,6 @@
 import { terser } from 'rollup-plugin-terser';
 import alias from '@rollup/plugin-alias';
+import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import minifyHTML from 'rollup-plugin-minify-html-literals';
 import resolve from '@rollup/plugin-node-resolve';
@@ -15,6 +16,11 @@ const getSharedPlugins = (isLegacy) => [
   commonjs(),
   // skipPreflightCheck flag needed or else build fails
   // see https://github.com/rollup/plugins/issues/381
+  babel({
+    babelHelpers: 'bundled',
+    envName: isLegacy ? 'legacy' : 'modern',
+    skipPreflightCheck: true
+  }),
   minifyHTML(),
   terser()
 ];
@@ -47,4 +53,13 @@ const modernConfig = {
   ]
 };
 
-export default [modernConfig];
+const auroBackgroundConfig = {
+  input: 'src/es5.js',
+  output: {
+    format: 'iife',
+    file: 'dist/auro-background__bundled.es5.js'
+  },
+  plugins: getSharedPlugins(true)
+};
+
+export default [modernConfig, auroBackgroundConfig];
