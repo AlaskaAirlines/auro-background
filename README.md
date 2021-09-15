@@ -9,11 +9,11 @@ For the most up to date information on [UI development browser support](https://
 ## Install
 
 [![Build Status](https://img.shields.io/github/workflow/status/AlaskaAirlines/auro-background/Test%20and%20publish?branch=master&style=for-the-badge)](https://github.com/AlaskaAirlines/auro-background/actions?query=workflow%3A%22test+and+publish%22)
-[![See it on NPM!](https://img.shields.io/npm/v/@aurolabs/auro-background?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurolabs/auro-background)
-[![License](https://img.shields.io/npm/l/@aurolabs/auro-background?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
+[![See it on NPM!](https://img.shields.io/npm/v/@aurodesignsystem/auro-background?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurodesignsystem/auro-background)
+[![License](https://img.shields.io/npm/l/@aurodesignsystem/auro-background?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ```shell
-$ npm i @aurolabs/auro-background
+$ npm i @aurodesignsystem/auro-background
 ```
 
 Installing as a direct, dev or peer dependency is up to the user installing the package. If you are unsure as to what type of dependency you should use, consider reading this [stack overflow](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies) answer.
@@ -27,7 +27,7 @@ The use of any Auro custom element has a dependency on [Auro Design Tokens](http
 Defining the component dependency within each component that is using the `<auro-background>` component.
 
 ```javascript
-import "@aurolabs/auro-background";
+import "@aurodesignsystem/auro-background";
 ```
 
 **Reference component in HTML**
@@ -53,7 +53,7 @@ In cases where the project is not able to process JS assets, there are pre-proce
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@latest/dist/bundled/essentials.css" />
 
-<script src="https://unpkg.com/@aurolabs/auro-background@latest/dist/auro-background__bundled.js" type="module"></script>
+<script src="https://unpkg.com/@aurodesignsystem/auro-background@latest/dist/auro-background__bundled.js" type="module"></script>
 ```
 
 ## auro-background use cases
