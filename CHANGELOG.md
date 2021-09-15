@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [2.0.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.5.0...v2.0.0) (2021-09-15)
+
+
+### Code Refactoring
+
+* **generator migration:** migrate repo to latest generator build ([d43fa3c](https://github.com/AlaskaAirlines/aurolabs-background/commit/d43fa3c97cc75214a4f3edf6bb7a2a89d6856131))
+
+
+### BREAKING CHANGES
+
+* **generator migration:** This migration incudes the updated npm namespace
+@aurodesignsystem/background thus fully deprecating the auroLabs version
+
 # [1.5.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.4.1...v1.5.0) (2021-09-08)
 
 
