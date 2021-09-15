@@ -12,7 +12,7 @@
   "description": "auro-background HTML custom element",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlaskaAirlines/aurolabs-background"
+    "url": "https://github.com/AlaskaAirlines/auro-background"
   },
   "main": "index.js",
   "license": "Apache-2.0",
