@@ -90,8 +90,8 @@ The `height` and `width` properties can be used to set custom dimensions. Additi
   <span slot="trigger">See code</span>
 
 ```html
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
-  <div style="color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" height="350px" width="300px">
+  <div style="height: 100%; color: var(--auro-color-text-primary-on-dark); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
   </div>
