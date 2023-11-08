@@ -29,10 +29,10 @@ describe('auro-background', () => {
       <auro-background></auro-background>
     `);
 
-    await expect(el.shadowRoot.innerHTML).contains(`--inset:var(--auro-size-none)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetSm:var(--inset)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetMd:var(--insetSm)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetLg:var(--insetMd)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--inset: var(--auro-size-none)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetSm: var(--inset)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetMd: var(--insetSm)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetLg: var(--insetMd)`);
   });
 
   it('auro-background custom element with pre-defined inset declared', async () => {
@@ -40,10 +40,10 @@ describe('auro-background', () => {
       <auro-background inset="md"></auro-background>
     `);
 
-    await expect(el.shadowRoot.innerHTML).contains(`--inset:var(--auro-size-md)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetSm:var(--inset)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetMd:var(--insetSm)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetLg:var(--insetMd)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--inset: var(--auro-size-md)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetSm: var(--inset)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetMd: var(--insetSm)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetLg: var(--insetMd)`);
   });
 
   it('auro-background custom element with custom inset declared', async () => {
@@ -51,10 +51,10 @@ describe('auro-background', () => {
       <auro-background inset="1rem"></auro-background>
     `);
 
-    await expect(el.shadowRoot.innerHTML).contains(`--inset:1rem`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetSm:var(--inset)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetMd:var(--insetSm)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetLg:var(--insetMd)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--inset: 1rem`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetSm: var(--inset)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetMd: var(--insetSm)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetLg: var(--insetMd)`);
   });
 
   it('auro-background custom element with pre-defined insetSm declared', async () => {
@@ -62,10 +62,10 @@ describe('auro-background', () => {
       <auro-background insetSm="md"></auro-background>
     `);
 
-    await expect(el.shadowRoot.innerHTML).contains(`--inset:var(--auro-size-none)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetSm:var(--auro-size-md)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetMd:var(--insetSm)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetLg:var(--insetMd)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--inset: var(--auro-size-none)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetSm: var(--auro-size-md)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetMd: var(--insetSm)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetLg: var(--insetMd)`);
   });
 
   it('auro-background custom element with custom insetSm declared', async () => {
@@ -73,10 +73,10 @@ describe('auro-background', () => {
       <auro-background insetSm="1rem"></auro-background>
     `);
 
-    await expect(el.shadowRoot.innerHTML).contains(`--inset:var(--auro-size-none)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetSm:1rem`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetMd:var(--insetSm)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetLg:var(--insetMd)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--inset: var(--auro-size-none)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetSm: 1rem`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetMd: var(--insetSm)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetLg: var(--insetMd)`);
   });
 
   it('auro-background custom element with pre-defined insetMd declared', async () => {
@@ -84,10 +84,10 @@ describe('auro-background', () => {
       <auro-background insetMd="md"></auro-background>
     `);
 
-    await expect(el.shadowRoot.innerHTML).contains(`--inset:var(--auro-size-none)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetSm:var(--inset)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetMd:var(--auro-size-md)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetLg:var(--insetMd)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--inset: var(--auro-size-none)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetSm: var(--inset)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetMd: var(--auro-size-md)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetLg: var(--insetMd)`);
   });
 
   it('auro-background custom element with custom insetMd declared', async () => {
@@ -95,10 +95,10 @@ describe('auro-background', () => {
       <auro-background insetMd="1rem"></auro-background>
     `);
 
-    await expect(el.shadowRoot.innerHTML).contains(`--inset:var(--auro-size-none)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetSm:var(--inset)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetMd:1rem`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetLg:var(--insetMd)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--inset: var(--auro-size-none)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetSm: var(--inset)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetMd: 1rem`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetLg: var(--insetMd)`);
   });
 
   it('auro-background custom element with pre-defined insetLg declared', async () => {
@@ -106,10 +106,10 @@ describe('auro-background', () => {
       <auro-background insetLg="md"></auro-background>
     `);
 
-    await expect(el.shadowRoot.innerHTML).contains(`--inset:var(--auro-size-none)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetSm:var(--inset)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetMd:var(--insetSm)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetLg:var(--auro-size-md)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--inset: var(--auro-size-none)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetSm: var(--inset)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetMd: var(--insetSm)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetLg: var(--auro-size-md)`);
   });
 
   it('auro-background custom element with custom insetLg declared', async () => {
@@ -117,9 +117,9 @@ describe('auro-background', () => {
       <auro-background insetLg="1rem"></auro-background>
     `);
 
-    await expect(el.shadowRoot.innerHTML).contains(`--inset:var(--auro-size-none)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetSm:var(--inset)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetMd:var(--insetSm)`);
-    await expect(el.shadowRoot.innerHTML).contains(`--insetLg:1rem`);
+    await expect(el.shadowRoot.innerHTML).contains(`--inset: var(--auro-size-none)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetSm: var(--inset)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetMd: var(--insetSm)`);
+    await expect(el.shadowRoot.innerHTML).contains(`--insetLg: 1rem`);
   });
 });
