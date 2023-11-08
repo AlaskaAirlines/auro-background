@@ -8,7 +8,6 @@
 // If using litElement base class
 import { LitElement, html } from "lit-element";
 import styleCss from "./style-css.js";
-import styleCssFixed from './style-fixed-css.js';
 import { styleMap } from 'lit-html/directives/style-map';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
@@ -60,10 +59,7 @@ class AuroBackground extends LitElement {
   }
 
   static get styles() {
-    return [
-      styleCss,
-      styleCssFixed
-    ];
+    return [styleCss];
   }
 
   /**
