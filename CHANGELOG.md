@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [2.0.1](https://github.com/AlaskaAirlines/auro-background/compare/v2.0.0...v2.0.1) (2024-01-09)
+
+
+### Performance Improvements
+
+* **release:** update to use latest semantic release ([b1537c8](https://github.com/AlaskaAirlines/auro-background/commit/b1537c8e5af3d9da93c7dab8aa1b27f5964151b4))
+* **token:** update token per new theming [#15](https://github.com/AlaskaAirlines/auro-background/issues/15) ([113b97d](https://github.com/AlaskaAirlines/auro-background/commit/113b97d6cf12c95cbb23299b538558885800ee14))
+
 # [2.0.0](https://github.com/AlaskaAirlines/aurolabs-background/compare/v1.5.0...v2.0.0) (2021-09-15)
 
 
