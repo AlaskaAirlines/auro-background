@@ -26,7 +26,7 @@ The following example illustrates the `auro-background` custom element using onl
 </auro-background>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
 ```html
@@ -58,7 +58,7 @@ Inset values may also be declared following the same rules as `inset` for each b
 </auro-background>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
 ```html
@@ -86,7 +86,7 @@ The `height` and `width` properties can be used to set custom dimensions. Additi
 </auro-background>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
 ```html
@@ -118,7 +118,7 @@ You may specify different `bg` values for each breakpoint using the `bgSm`, `bgM
 </auro-background>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
 ```html
@@ -157,7 +157,7 @@ You may specify different `bg` values for each breakpoint using the `bgSm`, `bgM
 </auro-background>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
 ```html
@@ -190,7 +190,7 @@ You may specify different `bg` values for each breakpoint using the `bgSm`, `bgM
 </auro-background>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
 ```html
