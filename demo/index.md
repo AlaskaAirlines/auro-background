@@ -35,7 +35,7 @@ See <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/b
   </auro-background>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/basic.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/basic.html -->
@@ -75,7 +75,7 @@ This will create a new custom element that you can use in your HTML that will fu
   </custom-background>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/custom.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/custom.html -->

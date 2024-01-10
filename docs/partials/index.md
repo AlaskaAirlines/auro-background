@@ -21,7 +21,7 @@ This file is generated based on a template fetched from `./docs/partials/index.m
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/basic.html) -->
@@ -47,7 +47,7 @@ This will create a new custom element that you can use in your HTML that will fu
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/custom.html) -->

@@ -42,7 +42,7 @@ Auro-background provides users a way to add a background image or color block in
   </auro-background>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/basic.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/basic.html -->
@@ -79,7 +79,7 @@ Inset values may also be declared following the same rules as `inset` for each b
   </auro-background>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/inset.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/inset.html -->
@@ -114,7 +114,7 @@ You may specify different `bg` values for each breakpoint using the `bgSm`, `bgM
   </auro-background>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/breakpoints.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/breakpoints.html -->
@@ -151,7 +151,7 @@ The `height` and `width` properties can be used to set custom dimensions. Additi
   </auro-background>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/fixedSize.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/fixedSize.html -->
