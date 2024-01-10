@@ -68,21 +68,21 @@ class AuroBackground extends LitElement {
    * @returns {string}
    */
   getInsetValues(inset) {
-    const validInsetPresets = [
-      'none',
-      'xxxs',
-      'xxs',
-      'xs',
-      'sm',
-      'md',
-      'lg',
-      'xl',
-      'xxl',
-      'xxxl'
-    ];
+    const presetValues = {
+      'none': '0',
+      'xxxs': '25',
+      'xxs': '50',
+      'xs': '100',
+      'sm': '150',
+      'md': '200',
+      'lg': '300',
+      'xl': '400',
+      'xxl': '600',
+      'xxxl': '800'
+    };
 
-    if (validInsetPresets.includes(inset)) {
-      return `var(--auro-size-${inset})`;
+    if (presetValues[inset]) {
+      return `var(--ds-size-${presetValues[inset]})`;
     }
 
     return inset;
@@ -103,7 +103,7 @@ class AuroBackground extends LitElement {
       '--heightSm': this.heightSm || 'var(--height)',
       '--heightMd': this.heightMd || 'var(--heightSm)',
       '--heightLg': this.heightLg || 'var(--heightMd)',
-      '--inset': this.getInsetValues(this.inset) || 'var(--auro-size-none)',
+      '--inset': this.getInsetValues(this.inset) || '0',
       '--insetSm': this.getInsetValues(this.insetSm) || 'var(--inset)',
       '--insetMd': this.getInsetValues(this.insetMd) || 'var(--insetSm)',
       '--insetLg': this.getInsetValues(this.insetLg) || 'var(--insetMd)',
