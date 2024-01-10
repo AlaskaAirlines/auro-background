@@ -50,8 +50,8 @@ In cases where the project is not able to process JS assets, there are pre-proce
 **NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. `@latest` is NOT aware of any MAJOR releases, use at your own risk.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
-<link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@latest/dist/bundled/essentials.css" />
+<link rel="stylesheet" href="https://unpkg.com/@aurodesignsystem/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
+<link rel="stylesheet" href="https://unpkg.com/@aurodesignsystem/webcorestylesheets@latest/src/bundled/essentials.css" />
 
 <script src="https://unpkg.com/@aurodesignsystem/auro-background@latest/dist/auro-background__bundled.js" type="module"></script>
 ```
