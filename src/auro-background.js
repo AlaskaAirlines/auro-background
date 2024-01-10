@@ -6,9 +6,9 @@
 // ---------------------------------------------------------------------
 
 // If using litElement base class
-import { LitElement, html } from "lit-element";
+import { LitElement, html } from "lit";
 import styleCss from "./style-css.js";
-import { styleMap } from 'lit-html/directives/style-map';
+import { styleMap } from 'lit/directives/style-map.js';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
@@ -33,7 +33,7 @@ import { styleMap } from 'lit-html/directives/style-map';
  */
 
 // build the component class
-class AuroBackground extends LitElement {
+export class AuroBackground extends LitElement {
   // function to define props used within the scope of this component
   static get properties() {
     return {
@@ -50,10 +50,10 @@ class AuroBackground extends LitElement {
       widthSm: { type: String },
       widthMd: { type: String },
       widthLg: { type: String },
-      inset: { type: String},
-      insetSm: { type: String},
-      insetMd: { type: String},
-      insetLg: { type: String}
+      inset: { type: String },
+      insetSm: { type: String },
+      insetMd: { type: String },
+      insetLg: { type: String }
       /* eslint-enable sort-vars */
     };
   }

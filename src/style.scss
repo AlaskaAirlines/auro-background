@@ -10,12 +10,14 @@
 @import './../node_modules/@aurodesignsystem/webcorestylesheets/src/breakpoints';
 @import './../node_modules/@aurodesignsystem/webcorestylesheets/src/core';
 
+/* stylelint-disable declaration-block-no-duplicate-properties, declaration-empty-line-before, custom-property-pattern */
+
 .background {
   width: auto;
-  width: var(--width); /* stylelint-disable-line declaration-block-no-duplicate-properties */
+  width: var(--width);
 
   height: inherit;
-  height: var(--height); /* stylelint-disable-line declaration-block-no-duplicate-properties */
+  height: var(--height);
 
   padding: var(--inset);
 
