@@ -1,5 +1,23 @@
 # Semantic Release Automated Changelog
 
+# [2.1.0](https://github.com/AlaskaAirlines/auro-background/compare/v2.0.1...v2.1.0) (2024-01-18)
+
+
+### Bug Fixes
+
+* **script:** update script path for docs ([e695ec9](https://github.com/AlaskaAirlines/auro-background/commit/e695ec936dce8c4b6f63773a8d80c442d9e9d2ac))
+
+
+### Features
+
+* **SSR:** add support for SSR projects [#21](https://github.com/AlaskaAirlines/auro-background/issues/21) ([b9d81de](https://github.com/AlaskaAirlines/auro-background/commit/b9d81de2388c1a0915d31de7e6a40a0232d2d7f6))
+
+
+### Performance Improvements
+
+* **generator:** update repo with generator [#22](https://github.com/AlaskaAirlines/auro-background/issues/22) ([8726410](https://github.com/AlaskaAirlines/auro-background/commit/8726410029a3d24c6b80902ce38ad3f700f02dcb))
+* **renovate:** implement node 20 and theming support [#22](https://github.com/AlaskaAirlines/auro-background/issues/22) [#23](https://github.com/AlaskaAirlines/auro-background/issues/23) ([663b205](https://github.com/AlaskaAirlines/auro-background/commit/663b20525ca6e81df856735283e40a79c8dc7abb))
+
 ## [2.0.1](https://github.com/AlaskaAirlines/auro-background/compare/v2.0.0...v2.0.1) (2024-01-09)
 
 
