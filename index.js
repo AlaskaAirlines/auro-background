@@ -1,4 +1,4 @@
-import { AuroBackground } from './src/auro-background';
+import { AuroBackground } from './src/auro-background.js';
 
 /**
  * Register Custom Element.
