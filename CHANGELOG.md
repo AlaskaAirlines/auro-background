@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.1.1](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.0...v2.1.1) (2024-01-27)
+
+
+### Performance Improvements
+
+* update index per SSR support ([619d22a](https://github.com/AlaskaAirlines/auro-background/commit/619d22a4d6b5ae9fc85f77022399efd132d8b0a2))
+
 # [2.1.0](https://github.com/AlaskaAirlines/auro-background/compare/v2.0.1...v2.1.0) (2024-01-18)
 
 
