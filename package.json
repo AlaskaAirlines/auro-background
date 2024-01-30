@@ -35,7 +35,6 @@
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@open-wc/testing": "^4.0.0",
-    "@open-wc/testing-karma": "^4.0.9",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
