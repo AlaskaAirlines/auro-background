@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.1.2](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.1...v2.1.2) (2024-02-07)
+
+
+### Bug Fixes
+
+* **import:** index.js now import correct class path [#26](https://github.com/AlaskaAirlines/auro-background/issues/26) ([ba87047](https://github.com/AlaskaAirlines/auro-background/commit/ba870479ca7d7aaefb462f4b965ed7e1502625a6))
+
 ## [2.1.1](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.0...v2.1.1) (2024-01-27)
 
 
