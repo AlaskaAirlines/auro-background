@@ -27,7 +27,7 @@ See <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/b
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/basic.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/basic.html -->
-  <auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
+  <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
     <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <auro-header level="2" display="600">View all destinations</auro-header>
       <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -41,7 +41,7 @@ See <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/b
 <!-- The below code snippet is automatically added from ./../../apiExamples/basic.html -->
 
 ```html
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
+<auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
   <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -67,7 +67,7 @@ This will create a new custom element that you can use in your HTML that will fu
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/custom.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/custom.html -->
-  <custom-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
+  <custom-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
     <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <auro-header level="2" display="600">View all destinations</auro-header>
       <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -81,7 +81,7 @@ This will create a new custom element that you can use in your HTML that will fu
 <!-- The below code snippet is automatically added from ./../../apiExamples/custom.html -->
 
 ```html
-<custom-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
+<custom-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
   <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>

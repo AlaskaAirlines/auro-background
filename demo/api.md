@@ -34,7 +34,7 @@ Auro-background provides users a way to add a background image or color block in
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/basic.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/basic.html -->
-  <auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
+  <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
     <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <auro-header level="2" display="600">View all destinations</auro-header>
       <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -48,7 +48,7 @@ Auro-background provides users a way to add a background image or color block in
 <!-- The below code snippet is automatically added from ./../../apiExamples/basic.html -->
 
 ```html
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
+<auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
   <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -71,7 +71,7 @@ Inset values may also be declared following the same rules as `inset` for each b
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/inset.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/inset.html -->
-  <auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" inset="xl">
+  <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" inset="xl">
     <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <auro-header level="2" display="600">View all destinations</auro-header>
       <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -85,7 +85,7 @@ Inset values may also be declared following the same rules as `inset` for each b
 <!-- The below code snippet is automatically added from ./../../apiExamples/inset.html -->
 
 ```html
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" inset="xl">
+<auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" inset="xl">
   <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -103,9 +103,9 @@ You may specify different `bg` values for each breakpoint using the `bgSm`, `bgM
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/breakpoints.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/breakpoints.html -->
   <auro-background
-    bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat"
-    bgMd="url(https://sitecore-prod-cd-westus2.azurewebsites.net/-/media/Images/homepage-tiles/email-deals-holiday/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
-    bgLg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/common-assets/destinations/hawaii-bg) center center/cover no-repeat"
+    bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"
+    bgMd="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt947ef7b1f81b7f99/6633c2589db1edec36f6de69/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
+    bgLg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt8a7ff6c35b184273/6633c2581dbb0945b40b8787/hawaii-bg.png) center center/cover no-repeat"
     inset="xl">
     <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <auro-header level="2" display="600">View all destinations</auro-header>
@@ -121,9 +121,9 @@ You may specify different `bg` values for each breakpoint using the `bgSm`, `bgM
 
 ```html
 <auro-background
-  bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat"
-  bgMd="url(https://sitecore-prod-cd-westus2.azurewebsites.net/-/media/Images/homepage-tiles/email-deals-holiday/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
-  bgLg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/common-assets/destinations/hawaii-bg) center center/cover no-repeat"
+  bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"
+  bgMd="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt947ef7b1f81b7f99/6633c2589db1edec36f6de69/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
+  bgLg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt8a7ff6c35b184273/6633c2581dbb0945b40b8787/hawaii-bg.png) center center/cover no-repeat"
   inset="xl">
   <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
@@ -143,7 +143,7 @@ The `height` and `width` properties can be used to set custom dimensions. Additi
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/fixedSize.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/fixedSize.html -->
-  <auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" height="350px" width="300px">
+  <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" height="350px" width="300px">
     <div style="height: 100%; color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <auro-header level="2" display="600">View all destinations</auro-header>
       <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
@@ -157,7 +157,7 @@ The `height` and `width` properties can be used to set custom dimensions. Additi
 <!-- The below code snippet is automatically added from ./../../apiExamples/fixedSize.html -->
 
 ```html
-<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat" height="350px" width="300px">
+<auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" height="350px" width="300px">
   <div style="height: 100%; color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <auro-header level="2" display="600">View all destinations</auro-header>
     <auro-hyperlink cta href="#">See where we fly</auro-hyperlink>

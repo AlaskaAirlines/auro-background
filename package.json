@@ -115,7 +115,7 @@
             "./README.md",
             "./docs/api.md",
             "./demo/demo.md",
-            "./demo/apiExamples.md"
+            "./demo/api.md"
           ]
         }
       ],

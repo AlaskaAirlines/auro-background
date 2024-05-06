@@ -14,34 +14,28 @@ const readmeFilePath = dirDocTemplates + '/README.md';
  */
 
 function nameExtraction() {
-  const packageJson = fs.readFileSync('package.json', 'utf8', function(err, data) {
-    if (err) {
-      console.log('ERROR: Unable to read package.json file', err);
-    }
-  })
+ const packageJson = fs.readFileSync('package.json', 'utf8', function(err, data) {
+   if (err) {
+     console.log('ERROR: Unable to read package.json file', err);
+   }
+ })
 
-  let pName = JSON.parse(packageJson).name;
-  let pVersion = JSON.parse(packageJson).version;
-  let pdtVersion = JSON.parse(packageJson).peerDependencies['\@aurodesignsystem/design-tokens'].substring(1)
-  let wcssVersion = JSON.parse(packageJson).peerDependencies['\@aurodesignsystem/webcorestylesheets'].substring(1)
+ let pName = JSON.parse(packageJson).name;
 
-  let npmStart = pName.indexOf('@');
-  let namespaceStart = pName.indexOf('/');
-  let nameStart = pName.indexOf('-');
+ let npmStart = pName.indexOf('@');
+ let namespaceStart = pName.indexOf('/');
+ let nameStart = pName.indexOf('-');
 
-  let result = {
-    'npm': pName.substring(npmStart, namespaceStart),
-    'namespace': pName.substring(namespaceStart + 1, nameStart),
-    'namespaceCap': pName.substring(namespaceStart + 1)[0].toUpperCase() + pName.substring(namespaceStart + 2, nameStart),
-    'name': pName.substring(nameStart + 1),
-    'nameCap': pName.substring(nameStart + 1)[0].toUpperCase() + pName.substring(nameStart + 2),
-    'version': pVersion,
-    'tokensVersion': pdtVersion,
-    'wcssVersion': wcssVersion
-  };
+ let result = {
+   'npm': pName.substring(npmStart, namespaceStart),
+   'namespace': pName.substring(namespaceStart + 1, nameStart),
+   'namespaceCap': pName.substring(namespaceStart + 1)[0].toUpperCase() + pName.substring(namespaceStart + 2, nameStart),
+   'name': pName.substring(nameStart + 1),
+   'nameCap': pName.substring(nameStart + 1)[0].toUpperCase() + pName.substring(nameStart + 2)
+ };
 
-  return result;
- }
+ return result;
+}
 
 /**
  * Replace all instances of [npm], [name], [Name], [namespace] and [Namespace] accordingly
@@ -59,9 +53,6 @@ function formatTemplateFileContents(content, destination) {
   result = result.replace(/\[Name](?!\()/g, nameExtractionData.nameCap);
   result = result.replace(/\[namespace]/g, nameExtractionData.namespace);
   result = result.replace(/\[Namespace]/g, nameExtractionData.namespaceCap);
-  result = result.replace(/\[Version]/g, nameExtractionData.version);
-  result = result.replace(/\[dtVersion]/g, nameExtractionData.tokensVersion);
-  result = result.replace(/\[wcssVersion]/g, nameExtractionData.wcssVersion);
 
   /**
    * Cleanup line breaks
@@ -91,8 +82,8 @@ function formatApiTableContents(content, destination) {
 
   fs.writeFileSync(destination, result, { encoding: 'utf8'});
 
-  fs.readFile('./demo/apiExamples.md', 'utf8', function(err, data) {
-    formatTemplateFileContents(data, './demo/apiExamples.md');
+  fs.readFile('./demo/api.md', 'utf8', function(err, data) {
+    formatTemplateFileContents(data, './demo/api.md');
   });
 }
 
@@ -123,7 +114,7 @@ function processReadme() {
 }
 
 /**
- * Compiles `./docTemplates/demo.md` -> `./demo/index.md`
+ * Compiles `./docs/partials/index.md` -> `./demo/index.md`
  */
 
 function processDemo() {
@@ -148,17 +139,17 @@ function processDemo() {
 }
 
 /**
- * Compiles `./docTemplates/apiExamples.md` -> `./demo/apiExamples.md`
+ * Compiles `./docs/partials/api.md` -> `./demo/api.md`
  */
 
 function processApiExamples() {
   const callback = function(updatedContent, outputConfig) {
-    if (fs.existsSync('./demo/apiExamples.md')) {
-      fs.readFile('./demo/apiExamples.md', 'utf8', function(err, data) {
-        formatApiTableContents(data, './demo/apiExamples.md');
+    if (fs.existsSync('./demo/api.md')) {
+      fs.readFile('./demo/api.md', 'utf8', function(err, data) {
+        formatApiTableContents(data, './demo/api.md');
       });
     } else {
-      console.log('ERROR: ./demo/apiExamples.md file is missing');
+      console.log('ERROR: ./demo/api.md file is missing');
     }
   };
 
@@ -167,7 +158,7 @@ function processApiExamples() {
     outputDir: './demo'
   };
 
-  const markdownPath = path.join(__dirname, '../docs/partials/apiExamples.md');
+  const markdownPath = path.join(__dirname, '../docs/partials/api.md');
 
   markdownMagic(markdownPath, config, callback);
 }
