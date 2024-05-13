@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [2.1.4](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.3...v2.1.4) (2024-05-13)
+
+
+### Bug Fixes
+
+* **docs:** update generateDocs script to replace version numbers during build ([bd3726f](https://github.com/AlaskaAirlines/auro-background/commit/bd3726f5cf4717589e979a2a4d78e5d8899ddfc3))
+
+
+### Performance Improvements
+
+* **images:** update path of images ([d886532](https://github.com/AlaskaAirlines/auro-background/commit/d886532d9641ccdd6d9c1c45893cf64323659b68))
+
 ## [2.1.3](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.2...v2.1.3) (2024-02-13)
 
 
