@@ -114,7 +114,7 @@
             "./CHANGELOG.md",
             "./README.md",
             "./docs/api.md",
-            "./demo/demo.md",
+            "./demo/index.md",
             "./demo/api.md"
           ]
         }

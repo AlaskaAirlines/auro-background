@@ -14,28 +14,34 @@ const readmeFilePath = dirDocTemplates + '/README.md';
  */
 
 function nameExtraction() {
- const packageJson = fs.readFileSync('package.json', 'utf8', function(err, data) {
-   if (err) {
-     console.log('ERROR: Unable to read package.json file', err);
-   }
- })
+  const packageJson = fs.readFileSync('package.json', 'utf8', function(err, data) {
+    if (err) {
+      console.log('ERROR: Unable to read package.json file', err);
+    }
+  })
 
- let pName = JSON.parse(packageJson).name;
+  let pName = JSON.parse(packageJson).name;
+  let pVersion = JSON.parse(packageJson).version;
+  let pdtVersion = JSON.parse(packageJson).peerDependencies['\@aurodesignsystem/design-tokens'].substring(1)
+  let wcssVersion = JSON.parse(packageJson).peerDependencies['\@aurodesignsystem/webcorestylesheets'].substring(1)
 
- let npmStart = pName.indexOf('@');
- let namespaceStart = pName.indexOf('/');
- let nameStart = pName.indexOf('-');
+  let npmStart = pName.indexOf('@');
+  let namespaceStart = pName.indexOf('/');
+  let nameStart = pName.indexOf('-');
 
- let result = {
-   'npm': pName.substring(npmStart, namespaceStart),
-   'namespace': pName.substring(namespaceStart + 1, nameStart),
-   'namespaceCap': pName.substring(namespaceStart + 1)[0].toUpperCase() + pName.substring(namespaceStart + 2, nameStart),
-   'name': pName.substring(nameStart + 1),
-   'nameCap': pName.substring(nameStart + 1)[0].toUpperCase() + pName.substring(nameStart + 2)
- };
+  let result = {
+    'npm': pName.substring(npmStart, namespaceStart),
+    'namespace': pName.substring(namespaceStart + 1, nameStart),
+    'namespaceCap': pName.substring(namespaceStart + 1)[0].toUpperCase() + pName.substring(namespaceStart + 2, nameStart),
+    'name': pName.substring(nameStart + 1),
+    'nameCap': pName.substring(nameStart + 1)[0].toUpperCase() + pName.substring(nameStart + 2),
+    'version': pVersion,
+    'tokensVersion': pdtVersion,
+    'wcssVersion': wcssVersion
+  };
 
- return result;
-}
+  return result;
+ }
 
 /**
  * Replace all instances of [npm], [name], [Name], [namespace] and [Namespace] accordingly
@@ -53,6 +59,9 @@ function formatTemplateFileContents(content, destination) {
   result = result.replace(/\[Name](?!\()/g, nameExtractionData.nameCap);
   result = result.replace(/\[namespace]/g, nameExtractionData.namespace);
   result = result.replace(/\[Namespace]/g, nameExtractionData.namespaceCap);
+  result = result.replace(/\[Version]/g, nameExtractionData.version);
+  result = result.replace(/\[dtVersion]/g, nameExtractionData.tokensVersion);
+  result = result.replace(/\[wcssVersion]/g, nameExtractionData.wcssVersion);
 
   /**
    * Cleanup line breaks
