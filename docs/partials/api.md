@@ -76,3 +76,10 @@ The `height` and `width` properties can be used to set custom dimensions. Additi
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
+
+### Theme Support
+
+The component may be restyled using the following code sample and changing the values of the following token(s).
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.scss) -->
+<!-- The below code snippet is automatically added from ./../../src/tokens.scss -->
