@@ -1,5 +1,3 @@
-/* eslint-disable no-magic-numbers */
-/* eslint-disable no-negated-condition */
 // Copyright (c) 2021 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
 // See LICENSE in the project root for license information.
 
@@ -41,7 +39,6 @@ export class AuroBackground extends LitElement {
   // function to define props used within the scope of this component
   static get properties() {
     return {
-      /* eslint-disable sort-vars */
       bg: { type: String },
       bgSm: { type: String },
       bgMd: { type: String },
@@ -58,7 +55,6 @@ export class AuroBackground extends LitElement {
       insetSm: { type: String },
       insetMd: { type: String },
       insetLg: { type: String }
-      /* eslint-enable sort-vars */
     };
   }
 
