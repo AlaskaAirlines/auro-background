@@ -20,11 +20,15 @@
 
   padding: var(--inset);
 
+  background: var(--background);
+
   @include auro_breakpoint--sm {
     width: var(--widthSm);
     height: var(--heightSm);
 
     padding: var(--insetSm);
+
+    background: var(--backgroundSm);
   }
 
   @include auro_breakpoint--md {
@@ -32,6 +36,8 @@
     height: var(--heightMd);
 
     padding: var(--insetMd);
+
+    background: var(--backgroundMd);
   }
 
   @include auro_breakpoint--lg {
@@ -39,5 +45,7 @@
     height: var(--heightLg);
 
     padding: var(--insetMd);
+
+    background: var(--backgroundLg);
   }
 }

@@ -7,7 +7,6 @@
 import { LitElement, html } from "lit";
 
 import styleCss from "./style-css.js";
-import colorCss from "./color-css.js";
 import tokensCss from "./tokens-css.js";
 
 import { styleMap } from 'lit/directives/style-map.js';
@@ -61,7 +60,6 @@ export class AuroBackground extends LitElement {
   static get styles() {
     return [
       styleCss,
-      colorCss,
       tokensCss
     ];
   }
@@ -95,7 +93,7 @@ export class AuroBackground extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     const styles = {
-      '--background': this.bg || 'var(--ds-auro-background-color)',
+      '--background': this.bg || 'var(--ds-auro-container-color)',
       '--backgroundSm': this.bgSm || 'var(--background)',
       '--backgroundMd': this.bgMd || 'var(--backgroundSm)',
       '--backgroundLg': this.bgLg || 'var(--backgroundMd)',
