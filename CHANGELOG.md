@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [2.2.0-beta.1](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.4...v2.2.0-beta.1) (2024-07-23)
+
+
+### Features
+
+* update color styles for theming support [#31](https://github.com/AlaskaAirlines/auro-background/issues/31) ([9e13e97](https://github.com/AlaskaAirlines/auro-background/commit/9e13e978e3bcb0ea4f4fb63566ab1ccd52e7897b))
+
+
+### Performance Improvements
+
+* remove color stylesheet ([0afb095](https://github.com/AlaskaAirlines/auro-background/commit/0afb0953e4e6bcf951ed5feb575bb1a156daed23))
+* update linter dependencies and cleanup rule exclusions ([bdd2e5e](https://github.com/AlaskaAirlines/auro-background/commit/bdd2e5e7cdb14c125d11a929c5861337ee533a31))
+
 ## [2.1.4](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.3...v2.1.4) (2024-05-13)
 
 
