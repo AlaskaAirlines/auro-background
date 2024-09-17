@@ -6,6 +6,8 @@
 // If using litElement base class
 import { LitElement, html } from "lit";
 
+import AuroLibraryRuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
+
 import styleCss from "./style-css.js";
 import tokensCss from "./tokens-css.js";
 
@@ -35,6 +37,15 @@ import { styleMap } from 'lit/directives/style-map.js';
 
 // build the component class
 export class AuroBackground extends LitElement {
+  constructor() {
+    super();
+
+    /**
+     * @private
+     */
+    this.runtimeUtils = new AuroLibraryRuntimeUtils();
+  }
+
   // function to define props used within the scope of this component
   static get properties() {
     return {
@@ -62,6 +73,11 @@ export class AuroBackground extends LitElement {
       styleCss,
       tokensCss
     ];
+  }
+
+  firstUpdated() {
+    // Add the tag name as an attribute if it is different than the component name
+    this.runtimeUtils.handleComponentTagRename(this, 'auro-background');
   }
 
   /**
