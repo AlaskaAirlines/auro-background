@@ -1,22 +1,5 @@
 # Semantic Release Automated Changelog
 
-# [2.2.0-beta.3](https://github.com/AlaskaAirlines/auro-background/compare/v2.2.0-beta.2...v2.2.0-beta.3) (2024-09-17)
-
-
-### Bug Fixes
-
-* remove beta releases from changelog ([b9c55fa](https://github.com/AlaskaAirlines/auro-background/commit/b9c55faba70a1478dbf466c364fbf0943c47b105))
-
-
-### Features
-
-* add component name as attribute during custom registration ([9a62d5f](https://github.com/AlaskaAirlines/auro-background/commit/9a62d5f4d683850911be04bc201f95105fd0e2b7))
-
-
-### Performance Improvements
-
-* refactor custom component registration ([5a2e42f](https://github.com/AlaskaAirlines/auro-background/commit/5a2e42f072221ca64235a1525491e55b03b6c764))
-
 ## [2.1.4](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.3...v2.1.4) (2024-05-13)
 
 
