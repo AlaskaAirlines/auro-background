@@ -1,12 +1,5 @@
 # Semantic Release Automated Changelog
 
-# [2.2.0-beta.4](https://github.com/AlaskaAirlines/auro-background/compare/v2.2.0-beta.3...v2.2.0-beta.4) (2024-09-18)
-
-
-### Performance Improvements
-
-* use auro-library scripts for build process ([3a9d00d](https://github.com/AlaskaAirlines/auro-background/commit/3a9d00d0db30772aed44498bd03ee473bbe23143))
-
 ## [2.1.4](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.3...v2.1.4) (2024-05-13)
 
 
