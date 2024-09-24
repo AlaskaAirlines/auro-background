@@ -1,17 +1,5 @@
 # Semantic Release Automated Changelog
 
-# [3.0.0-beta.1](https://github.com/AlaskaAirlines/auro-background/compare/v2.2.0-beta.4...v3.0.0-beta.1) (2024-09-24)
-
-
-### Performance Improvements
-
-* update dependencies ([5b360c1](https://github.com/AlaskaAirlines/auro-background/commit/5b360c1ff4b8ae527ca66f1199c505bf53d784be))
-
-
-### BREAKING CHANGES
-
-* trigger major release for color theme support #31
-
 ## [2.1.4](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.3...v2.1.4) (2024-05-13)
 
 
