@@ -1,5 +1,33 @@
 # Semantic Release Automated Changelog
 
+# [3.0.0](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.4...v3.0.0) (2024-09-30)
+
+
+### Bug Fixes
+
+* remove beta releases from changelog ([7479962](https://github.com/AlaskaAirlines/auro-background/commit/747996236a74f35fb865ac6bc9f6bd1a0f4e5808))
+
+
+### Features
+
+* add component name as attribute during custom registration ([762e9f2](https://github.com/AlaskaAirlines/auro-background/commit/762e9f2eddb81a6dc9ed84c143cce6929ecc5446))
+* update color styles for theming support [#31](https://github.com/AlaskaAirlines/auro-background/issues/31) ([cccb59e](https://github.com/AlaskaAirlines/auro-background/commit/cccb59ebb152f2667304f0e6dba7600fcc7198e5))
+
+
+### Performance Improvements
+
+* refactor custom component registration ([c69924a](https://github.com/AlaskaAirlines/auro-background/commit/c69924a5ca249fd44814007ca6c2c338910029e2))
+* remove color stylesheet ([8f38a3a](https://github.com/AlaskaAirlines/auro-background/commit/8f38a3aafaccf21de92ee5bfa8b44f0404000cac))
+* update dependencies ([a0a33e7](https://github.com/AlaskaAirlines/auro-background/commit/a0a33e76c7cb1d1dea592dffc7afc3e3ec4323af))
+* update dependencies ([a0057b0](https://github.com/AlaskaAirlines/auro-background/commit/a0057b0a734cfcc206c9a2f135abb3760a0691ee))
+* update linter dependencies and cleanup rule exclusions ([a21fcd8](https://github.com/AlaskaAirlines/auro-background/commit/a21fcd84165329f8d00f76597c137b943a531c28))
+* use auro-library scripts for build process ([3c3fc0b](https://github.com/AlaskaAirlines/auro-background/commit/3c3fc0bd1bd3683e91a439a628aa0b5bfc160b1a))
+
+
+### BREAKING CHANGES
+
+* trigger major release for color theme support #31
+
 ## [2.1.4](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.3...v2.1.4) (2024-05-13)
 
 
