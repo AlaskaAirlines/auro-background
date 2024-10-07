@@ -173,3 +173,12 @@ The component may be restyled using the following code sample and changing the v
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.scss) -->
 <!-- The below code snippet is automatically added from ./../../src/tokens.scss -->
+
+```scss
+@import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
+
+:host {
+  --ds-auro-background-container-color: transparent;
+}
+```
+<!-- AURO-GENERATED-CONTENT:END -->
