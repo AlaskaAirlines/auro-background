@@ -109,7 +109,7 @@ export class AuroBackground extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     const styles = {
-      '--background': this.bg || 'var(--ds-auro-container-color)',
+      '--background': this.bg || 'var(--ds-auro-background-container-color)',
       '--backgroundSm': this.bgSm || 'var(--background)',
       '--backgroundMd': this.bgMd || 'var(--backgroundSm)',
       '--backgroundLg': this.bgLg || 'var(--backgroundMd)',
