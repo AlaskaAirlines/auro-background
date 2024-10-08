@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+## [3.0.1](https://github.com/AlaskaAirlines/auro-background/compare/v3.0.0...v3.0.1) (2024-10-08)
+
+
+### Bug Fixes
+
+* add tier 3 semantic token section [#40](https://github.com/AlaskaAirlines/auro-background/issues/40) ([7d8e627](https://github.com/AlaskaAirlines/auro-background/commit/7d8e627d9a11f40b547b16e938c1f948f2b69c04))
+
+
+### Performance Improvements
+
+* add component name to tier 3 token ([c1add92](https://github.com/AlaskaAirlines/auro-background/commit/c1add92762d716f4060f205741c74d6938f69701))
+* update dependencies ([6e00820](https://github.com/AlaskaAirlines/auro-background/commit/6e008207af346919495c0f869fde9683f8e22f75))
+
 # [3.0.0](https://github.com/AlaskaAirlines/auro-background/compare/v2.1.4...v3.0.0) (2024-09-30)
 
 
