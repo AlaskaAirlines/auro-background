@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.0.2](https://github.com/AlaskaAirlines/auro-background/compare/v3.0.1...v3.0.2) (2024-10-09)
+
+
+### Bug Fixes
+
+* moves auro library to dependencies in package.json [#42](https://github.com/AlaskaAirlines/auro-background/issues/42) ([bb87c07](https://github.com/AlaskaAirlines/auro-background/commit/bb87c073fed27d7e0b7f5b9f67f3d45bca12ba2a))
+
 ## [3.0.1](https://github.com/AlaskaAirlines/auro-background/compare/v3.0.0...v3.0.1) (2024-10-08)
 
 
