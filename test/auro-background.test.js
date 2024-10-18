@@ -1,5 +1,5 @@
 import { fixture, html, expect } from '@open-wc/testing';
-import '../src/auro-background.js';
+import '../index.js';
 
 describe('auro-background', () => {
   it('set all the properties and attributes', async () => {
