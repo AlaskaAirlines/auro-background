@@ -75,6 +75,18 @@ export class AuroBackground extends LitElement {
     ];
   }
 
+  /**
+   * This will register this element with the browser.
+   * @param {string} [name="auro-background"] - The name of element that you want to register to.
+   *
+   * @example
+   * AuroBackground.register("custom-background") // this will register this element to <custom-background/>
+   *
+   */
+  static register(name = "auro-background") {
+    AuroLibraryRuntimeUtils.prototype.registerComponent(name, AuroBackground);
+  }
+
   firstUpdated() {
     // Add the tag name as an attribute if it is different than the component name
     this.runtimeUtils.handleComponentTagRename(this, 'auro-background');
@@ -131,9 +143,4 @@ export class AuroBackground extends LitElement {
       <div class="background" style=${styleMap(styles)}><slot></slot></div>
     `;
   }
-}
-
-// define the name of the custom component
-if (!customElements.get("auro-background")) {
-  customElements.define("auro-background", AuroBackground);
 }
