@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [3.1.0](https://github.com/AlaskaAirlines/auro-background/compare/v3.0.2...v3.1.0) (2024-10-24)
+
+
+### Features
+
+* **api:** add register static method [#44](https://github.com/AlaskaAirlines/auro-background/issues/44) ([9d6aa28](https://github.com/AlaskaAirlines/auro-background/commit/9d6aa287d2f09cdfab256592f97401728ec3124c))
+
+
+### Performance Improvements
+
+* update dependency versions ([a0b2410](https://github.com/AlaskaAirlines/auro-background/commit/a0b2410f8fd7d0edce506fd1a0a63d357b3a63d3))
+
 ## [3.0.2](https://github.com/AlaskaAirlines/auro-background/compare/v3.0.1...v3.0.2) (2024-10-09)
 
 
