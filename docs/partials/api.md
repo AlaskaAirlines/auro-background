@@ -1,4 +1,4 @@
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../api.md) -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/api.md) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## API Examples
@@ -6,14 +6,14 @@
 ### Basic
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/basic.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/basic.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/basic.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/basic.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -29,14 +29,14 @@ When using a custom CSS rule do not include a semi-colon at at the end of the st
 Inset values may also be declared following the same rules as `inset` for each breakpoint property, i.e. `insetSm`, `insetMd` and `insetLg`.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/inset.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inset.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/inset.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inset.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -46,14 +46,14 @@ Inset values may also be declared following the same rules as `inset` for each b
 You may specify different `bg` values for each breakpoint using the `bgSm`, `bgMd` and `bgLg` properties.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/breakpoints.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/breakpoints.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/breakpoints.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/breakpoints.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -65,14 +65,14 @@ You may specify different `bg` values for each breakpoint using the `bgSm`, `bgM
 The `height` and `width` properties can be used to set custom dimensions. Additional properties available per breakpoint, i.e. `heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, `widthLg`.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/fixedSize.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/fixedSize.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/fixedSize.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/fixedSize.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -81,5 +81,5 @@ The `height` and `width` properties can be used to set custom dimensions. Additi
 
 The component may be restyled using the following code sample and changing the values of the following token(s).
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.scss) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../src/tokens.scss) -->
 <!-- AURO-GENERATED-CONTENT:END -->

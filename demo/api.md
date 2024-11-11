@@ -1,5 +1,5 @@
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../api.md) -->
-<!-- The below content is automatically added from ./../api.md -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/api.md) -->
+<!-- The below content is automatically added from ../docs/api.md -->
 
 # auro-background
 
@@ -32,8 +32,8 @@ Auro-background provides users a way to add a background image or color block in
 ### Basic
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/basic.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/basic.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/basic.html) -->
+  <!-- The below content is automatically added from ../apiExamples/basic.html -->
   <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
     <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <auro-header level="2" display="600">View all destinations</auro-header>
@@ -44,8 +44,8 @@ Auro-background provides users a way to add a background image or color block in
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/basic.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/basic.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/basic.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/basic.html -->
 
 ```html
 <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
@@ -69,8 +69,8 @@ When using a custom CSS rule do not include a semi-colon at at the end of the st
 Inset values may also be declared following the same rules as `inset` for each breakpoint property, i.e. `insetSm`, `insetMd` and `insetLg`.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/inset.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/inset.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/inset.html) -->
+  <!-- The below content is automatically added from ../apiExamples/inset.html -->
   <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" inset="xl">
     <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <auro-header level="2" display="600">View all destinations</auro-header>
@@ -81,8 +81,8 @@ Inset values may also be declared following the same rules as `inset` for each b
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/inset.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/inset.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/inset.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/inset.html -->
 
 ```html
 <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" inset="xl">
@@ -100,8 +100,8 @@ Inset values may also be declared following the same rules as `inset` for each b
 You may specify different `bg` values for each breakpoint using the `bgSm`, `bgMd` and `bgLg` properties.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/breakpoints.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/breakpoints.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/breakpoints.html) -->
+  <!-- The below content is automatically added from ../apiExamples/breakpoints.html -->
   <auro-background
     bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"
     bgMd="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt947ef7b1f81b7f99/6633c2589db1edec36f6de69/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
@@ -116,8 +116,8 @@ You may specify different `bg` values for each breakpoint using the `bgSm`, `bgM
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/breakpoints.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/breakpoints.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/breakpoints.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/breakpoints.html -->
 
 ```html
 <auro-background
@@ -141,8 +141,8 @@ You may specify different `bg` values for each breakpoint using the `bgSm`, `bgM
 The `height` and `width` properties can be used to set custom dimensions. Additional properties available per breakpoint, i.e. `heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, `widthLg`.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/fixedSize.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/fixedSize.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/fixedSize.html) -->
+  <!-- The below content is automatically added from ../apiExamples/fixedSize.html -->
   <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" height="350px" width="300px">
     <div style="height: 100%; color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <auro-header level="2" display="600">View all destinations</auro-header>
@@ -153,8 +153,8 @@ The `height` and `width` properties can be used to set custom dimensions. Additi
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/fixedSize.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/fixedSize.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/fixedSize.html) -->
+<!-- The below code snippet is automatically added from ../apiExamples/fixedSize.html -->
 
 ```html
 <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" height="350px" width="300px">
@@ -171,8 +171,8 @@ The `height` and `width` properties can be used to set custom dimensions. Additi
 
 The component may be restyled using the following code sample and changing the values of the following token(s).
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.scss) -->
-<!-- The below code snippet is automatically added from ./../../src/tokens.scss -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../src/tokens.scss) -->
+<!-- The below code snippet is automatically added from ../src/tokens.scss -->
 
 ```scss
 @import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
