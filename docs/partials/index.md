@@ -11,7 +11,7 @@ This file is generated based on a template fetched from `./docs/partials/index.m
 
 ## How to use
 
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/partials//useCases.md) -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/partials/useCases.md) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Example(s)
