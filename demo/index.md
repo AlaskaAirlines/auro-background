@@ -13,8 +13,8 @@ The `auro-background` element is an easy-to-use mobile-first alternative to writ
 
 ## How to use
 
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/partials//useCases.md) -->
-<!-- The below content is automatically added from ../docs/partials//useCases.md -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/partials/useCases.md) -->
+<!-- The below content is automatically added from ../docs/partials/useCases.md -->
 The `auro-background` component accepts 4 properties - `bg`, `height`, `width`, and `inset` that serve as the default at all breakpoints. `height`, `width`, and `inset` are not required and sizing will scale to the content when omitted. Additionally, there is a separate property for each supported breakpoint (`bgsm`, `bgmd`, `bglg`, `heightsm`, `heightmd`, `heightlg`, `widthsm`, `widthmd`, `widthlg`).  If you don't set specific size property the smaller property will be used.
 
 These properties map to the compound CSS `background` property and CSS properties of `height`, `width`, and `padding`. Anything you can do within the scope of those CSS rules you can do here.
