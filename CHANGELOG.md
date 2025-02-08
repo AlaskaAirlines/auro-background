@@ -1,5 +1,19 @@
 # Semantic Release Automated Changelog
 
+## [3.1.2](https://github.com/AlaskaAirlines/auro-background/compare/v3.1.1...v3.1.2) (2025-02-08)
+
+
+### Bug Fixes
+
+* add in missing npm script ([0043770](https://github.com/AlaskaAirlines/auro-background/commit/0043770b36ce486982931e194084130c11585d38))
+
+
+### Performance Improvements
+
+* update dependencies ([1a06cd1](https://github.com/AlaskaAirlines/auro-background/commit/1a06cd1e0e766bcd58b9c43c636d1963f76aa10f))
+* update mixin ref per npm update ([ab34609](https://github.com/AlaskaAirlines/auro-background/commit/ab346097e9da9543b75861b56279d4eb8b869d2b))
+* update node to version 22 ([265675e](https://github.com/AlaskaAirlines/auro-background/commit/265675ef5cf8232d0ec5bb07994456a4b760c156))
+
 ## [3.1.1](https://github.com/AlaskaAirlines/auro-background/compare/v3.1.0...v3.1.1) (2024-11-23)
 
 
