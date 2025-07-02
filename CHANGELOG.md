@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [4.0.3](https://github.com/AlaskaAirlines/auro-background/compare/v4.0.2...v4.0.3) (2025-07-02)
+
+
+### Bug Fixes
+
+* update dependencies and restructure styles ([2f2fcb0](https://github.com/AlaskaAirlines/auro-background/commit/2f2fcb034114dd9d3af0af824b7a0d64e6005947))
+* update docs head content ([53411b1](https://github.com/AlaskaAirlines/auro-background/commit/53411b126649db188f0ff26359a29172fa598013))
+
 ## [4.0.2](https://github.com/AlaskaAirlines/auro-background/compare/v4.0.1...v4.0.2) (2025-04-30)
 
 
