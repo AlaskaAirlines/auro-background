@@ -5,11 +5,8 @@
 
 /* stylelint-disable declaration-block-no-duplicate-properties, declaration-empty-line-before, custom-property-pattern, at-rule-empty-line-before */
 
-@import './../node_modules/@aurodesignsystem/design-tokens/dist/auro-classic/SCSSVariables';
-@import './../node_modules/@aurodesignsystem/design-tokens/dist/auro-classic/SassCustomProperties';
-
-@import './../node_modules/@aurodesignsystem/webcorestylesheets/src/breakpoints';
-@import './../node_modules/@aurodesignsystem/webcorestylesheets/src/core';
+@use '@aurodesignsystem/webcorestylesheets/src/breakpoints' as bp;
+@use '@aurodesignsystem/webcorestylesheets/src/core';
 
 .background {
   width: auto;
@@ -22,7 +19,7 @@
 
   background: var(--background);
 
-  @include auro_grid-breakpoint--sm {
+  @include bp.auro_grid-breakpoint--sm {
     width: var(--widthSm);
     height: var(--heightSm);
 
@@ -31,7 +28,7 @@
     background: var(--backgroundSm);
   }
 
-  @include auro_grid-breakpoint--md {
+  @include bp.auro_grid-breakpoint--md {
     width: var(--widthMd);
     height: var(--heightMd);
 
@@ -40,7 +37,7 @@
     background: var(--backgroundMd);
   }
 
-  @include auro_grid-breakpoint--lg {
+  @include bp.auro_grid-breakpoint--lg {
     width: var(--widthLg);
     height: var(--heightLg);
 
