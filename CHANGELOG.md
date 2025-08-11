@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.0.4](https://github.com/AlaskaAirlines/auro-background/compare/v4.0.3...v4.0.4) (2025-08-11)
+
+
+### Bug Fixes
+
+* auro library was causing aqua scan failures ([6b14057](https://github.com/AlaskaAirlines/auro-background/commit/6b14057dde7929a3ab5594d5cfa096fbb7cfe0d4))
+
 ## [4.0.3](https://github.com/AlaskaAirlines/auro-background/compare/v4.0.2...v4.0.3) (2025-07-02)
 
 
