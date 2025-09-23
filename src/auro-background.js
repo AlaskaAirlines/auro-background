@@ -6,12 +6,12 @@
 // If using litElement base class
 import { LitElement, html } from "lit";
 
-import AuroLibraryRuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
+import AuroLibraryRuntimeUtils from "@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs";
 
 import styleCss from "./styles/style-css.js";
 import tokensCss from "./styles/tokens-css.js";
 
-import { styleMap } from 'lit/directives/style-map.js';
+import { styleMap } from "lit/directives/style-map.js";
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
@@ -64,15 +64,12 @@ export class AuroBackground extends LitElement {
       inset: { type: String },
       insetSm: { type: String },
       insetMd: { type: String },
-      insetLg: { type: String }
+      insetLg: { type: String },
     };
   }
 
   static get styles() {
-    return [
-      styleCss,
-      tokensCss
-    ];
+    return [styleCss, tokensCss];
   }
 
   /**
@@ -89,7 +86,7 @@ export class AuroBackground extends LitElement {
 
   firstUpdated() {
     // Add the tag name as an attribute if it is different than the component name
-    this.runtimeUtils.handleComponentTagRename(this, 'auro-background');
+    this.runtimeUtils.handleComponentTagRename(this, "auro-background");
   }
 
   /**
@@ -99,16 +96,16 @@ export class AuroBackground extends LitElement {
    */
   getInsetValues(inset) {
     const presetValues = {
-      'none': '0',
-      'xxxs': '25',
-      'xxs': '50',
-      'xs': '100',
-      'sm': '150',
-      'md': '200',
-      'lg': '300',
-      'xl': '400',
-      'xxl': '600',
-      'xxxl': '800'
+      none: "0",
+      xxxs: "25",
+      xxs: "50",
+      xs: "100",
+      sm: "150",
+      md: "200",
+      lg: "300",
+      xl: "400",
+      xxl: "600",
+      xxxl: "800",
     };
 
     if (presetValues[inset]) {
@@ -121,22 +118,22 @@ export class AuroBackground extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     const styles = {
-      '--background': this.bg || 'var(--ds-auro-background-container-color)',
-      '--backgroundSm': this.bgSm || 'var(--background)',
-      '--backgroundMd': this.bgMd || 'var(--backgroundSm)',
-      '--backgroundLg': this.bgLg || 'var(--backgroundMd)',
-      '--width': this.width || 'auto',
-      '--widthSm': this.widthSm || 'var(--width)',
-      '--widthMd': this.widthMd || 'var(--widthSm)',
-      '--widthLg': this.widthLg || 'var(--widthMd)',
-      '--height': this.height || 'auto',
-      '--heightSm': this.heightSm || 'var(--height)',
-      '--heightMd': this.heightMd || 'var(--heightSm)',
-      '--heightLg': this.heightLg || 'var(--heightMd)',
-      '--inset': this.getInsetValues(this.inset) || '0',
-      '--insetSm': this.getInsetValues(this.insetSm) || 'var(--inset)',
-      '--insetMd': this.getInsetValues(this.insetMd) || 'var(--insetSm)',
-      '--insetLg': this.getInsetValues(this.insetLg) || 'var(--insetMd)',
+      "--background": this.bg || "var(--ds-auro-background-container-color)",
+      "--backgroundSm": this.bgSm || "var(--background)",
+      "--backgroundMd": this.bgMd || "var(--backgroundSm)",
+      "--backgroundLg": this.bgLg || "var(--backgroundMd)",
+      "--width": this.width || "auto",
+      "--widthSm": this.widthSm || "var(--width)",
+      "--widthMd": this.widthMd || "var(--widthSm)",
+      "--widthLg": this.widthLg || "var(--widthMd)",
+      "--height": this.height || "auto",
+      "--heightSm": this.heightSm || "var(--height)",
+      "--heightMd": this.heightMd || "var(--heightSm)",
+      "--heightLg": this.heightLg || "var(--heightMd)",
+      "--inset": this.getInsetValues(this.inset) || "0",
+      "--insetSm": this.getInsetValues(this.insetSm) || "var(--inset)",
+      "--insetMd": this.getInsetValues(this.insetMd) || "var(--insetSm)",
+      "--insetLg": this.getInsetValues(this.insetLg) || "var(--insetMd)",
     };
 
     return html`

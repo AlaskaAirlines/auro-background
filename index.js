@@ -1,3 +1,3 @@
-import { AuroBackground } from './src/auro-background.js';
+import { AuroBackground } from "./src/auro-background.js";
 
 AuroBackground.register();
