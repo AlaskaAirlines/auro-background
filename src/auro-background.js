@@ -8,8 +8,8 @@ import { LitElement, html } from "lit";
 
 import AuroLibraryRuntimeUtils from "@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs";
 
-import styleCss from "./styles/style-css.js";
-import tokensCss from "./styles/tokens-css.js";
+import styleCss from "./styles/style.scss";
+import tokensCss from "./styles/tokens.scss";
 
 import { styleMap } from "lit/directives/style-map.js";
 
