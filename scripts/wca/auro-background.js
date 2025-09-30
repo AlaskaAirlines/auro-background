@@ -1,5 +1,4 @@
-
-import { AuroBackground } from '../../src/auro-background.js';
+import { AuroBackground } from "../../src/auro-background.js";
 
 /**
  * Auro-background provides users a way to add a background image or color block including a gradient.
