@@ -1,24 +1,36 @@
 # auro-background
 
-Auro-background provides users a way to add a background image or color block including a gradient.
+The `auro-background` element provides users a way to add a background image or color block including a gradient.
 
-## Properties
+### Properties & Attributes
 
-| Property   | Attribute  | Type     | Description                                      |
-|------------|------------|----------|--------------------------------------------------|
-| `bg`       | `bg`       | `String` | Applies all breakpoints                          |
-| `bgLg`     | `bgLg`     | `String` | `breakpoint-lg` and above                        |
-| `bgMd`     | `bgMd`     | `String` | `breakpoint-md` and above                        |
-| `bgSm`     | `bgSm`     | `String` | `breakpoint--sm` and above                       |
-| `height`   | `height`   | `String` | Apply minimum height value                       |
-| `heightLg` | `heightLg` | `String` | Apply minimum height for `breakpoint-lg` and above |
-| `heightMd` | `heightMd` | `String` | Apply minimum height for `breakpoint-md` and above |
-| `heightSm` | `heightSm` | `String` | Apply minimum height for `breakpoint-sm` and above |
-| `inset`    | `inset`    | `String` | Apply internal padding                           |
-| `insetLg`  | `insetLg`  | `String` | Apply internal padding for `breakpoint-lg` and above |
-| `insetMd`  | `insetMd`  | `String` | Apply internal padding for `breakpoint-md` and above |
-| `insetSm`  | `insetSm`  | `String` | Apply internal padding for `breakpoint-sm` and above |
-| `width`    | `width`    | `String` | Define custom width                              |
-| `widthLg`  | `widthLg`  | `String` | Define custom width for `breakpoint-lg` and above |
-| `widthMd`  | `widthMd`  | `String` | Define custom with for `breakpoint-md` and above |
-| `widthSm`  | `widthSm`  | `String` | Define custom width for `breakpoint-sm` and above |
+| Properties | Attributes | Modifiers | Type                                                                                           | Default | Description                                                    |
+| ---------- | ---------- | --------- | ---------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------- |
+| bg         | bg         |           | string                                                                                         |         | Sets the background image at all breakpoints                   |
+| bgLg       | bgLg       |           | string                                                                                         |         | Sets the background image at `ds-grid-breakpoint-lg` and above |
+| bgMd       | bgMd       |           | string                                                                                         |         | Sets the background image at `ds-grid-breakpoint-md` and above |
+| bgSm       | bgSm       |           | string                                                                                         |         | Sets the background image at `ds-grid-breakpoint-sm` and above |
+| height     | height     |           | string                                                                                         |         | Applies custom height at all breakpoints                       |
+| heightLg   | heightLg   |           | string                                                                                         |         | Applies custom height at `ds-grid-breakpoint-lg` and above     |
+| heightMd   | heightMd   |           | string                                                                                         |         | Applies custom height at `ds-grid-breakpoint-md` and above     |
+| heightSm   | heightSm   |           | string                                                                                         |         | Applies custom height at `ds-grid-breakpoint-sm` and above     |
+| inset      | inset      |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| string |         | Applies internal padding at all breakpoints                    |
+| insetLg    | insetLg    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| string |         | Applies internal padding at `ds-grid-breakpoint-lg` and above  |
+| insetMd    | insetMd    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| string |         | Applies internal padding at `ds-grid-breakpoint-md` and above  |
+| insetSm    | insetSm    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| string |         | Applies internal padding at `ds-grid-breakpoint-sm` and above  |
+| width      | width      |           | string                                                                                         |         | Applies custom width at all breakpoints                        |
+| widthLg    | widthLg    |           | string                                                                                         |         | Applies custom width at `ds-grid-breakpoint-lg` and above      |
+| widthMd    | widthMd    |           | string                                                                                         |         | Applies custom width at `ds-grid-breakpoint-md` and above      |
+| widthSm    | widthSm    |           | string                                                                                         |         | Applies custom width at `ds-grid-breakpoint-sm` and above      |
+
+### Methods
+
+| Name     | Parameters                                                           | Return | Description                                       |
+| -------- | -------------------------------------------------------------------- | ------ | ------------------------------------------------- |
+| register | `name` (string) - The name of the element that you want to register. |        | This will register this element with the browser. |
+
+### Slots
+
+| Name      | Description                                               |
+| --------- | --------------------------------------------------------- |
+| (default) | Default slot for content within the background container. |
