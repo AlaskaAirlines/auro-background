@@ -15,24 +15,10 @@ import { styleMap } from "lit/directives/style-map.js";
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
- * Auro-background provides users a way to add a background image or color block including a gradient.
- *
- * @attr {String} bg - Applies all breakpoints
- * @attr {String} bgSm - `breakpoint--sm` and above
- * @attr {String} bgMd - `breakpoint-md` and above
- * @attr {String} bgLg - `breakpoint-lg` and above
- * @attr {String} height - Apply minimum height value
- * @attr {String} heightSm - Apply minimum height for `breakpoint-sm` and above
- * @attr {String} heightMd - Apply minimum height for `breakpoint-md` and above
- * @attr {String} heightLg - Apply minimum height for `breakpoint-lg` and above
- * @attr {String} width - Define custom width
- * @attr {String} widthSm - Define custom width for `breakpoint-sm` and above
- * @attr {String} widthMd - Define custom with for `breakpoint-md` and above
- * @attr {String} widthLg - Define custom width for `breakpoint-lg` and above
- * @attr {String} inset - Apply internal padding
- * @attr {String} insetSm - Apply internal padding for `breakpoint-sm` and above
- * @attr {String} insetMd - Apply internal padding for `breakpoint-md` and above
- * @attr {String} insetLg - Apply internal padding for `breakpoint-lg` and above
+ * The `auro-background` element provides users a way to add a background image or color block including a gradient.
+ * @customElement auro-background
+ * 
+ * @slot - Default slot for content within the background container.
  */
 
 // build the component class
@@ -49,22 +35,74 @@ export class AuroBackground extends LitElement {
   // function to define props used within the scope of this component
   static get properties() {
     return {
+      /**
+       * Sets the background image at all breakpoints
+       */
       bg: { type: String },
-      bgSm: { type: String },
-      bgMd: { type: String },
+      /**
+       * Sets the background image at `ds-grid-breakpoint-lg` and above
+       */
       bgLg: { type: String },
+      /**
+       * Sets the background image at `ds-grid-breakpoint-md` and above
+       */
+      bgMd: { type: String },
+      /**
+       * Sets the background image at `ds-grid-breakpoint-sm` and above
+       */
+      bgSm: { type: String },
+      /**
+       * Applies custom height at all breakpoints
+       */
       height: { type: String },
-      heightSm: { type: String },
-      heightMd: { type: String },
+      /**
+       * Applies custom height at `ds-grid-breakpoint-lg` and above
+       */
       heightLg: { type: String },
-      width: { type: String },
-      widthSm: { type: String },
-      widthMd: { type: String },
-      widthLg: { type: String },
+      /**
+       * Applies custom height at `ds-grid-breakpoint-md` and above
+       */
+      heightMd: { type: String },
+      /**
+       * Applies custom height at `ds-grid-breakpoint-sm` and above
+       */
+      heightSm: { type: String },
+      /**
+       * Applies internal padding at all breakpoints
+       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | string}
+       */
       inset: { type: String },
-      insetSm: { type: String },
-      insetMd: { type: String },
+      /**
+       * Applies internal padding at `ds-grid-breakpoint-lg` and above
+       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | string}
+       */
       insetLg: { type: String },
+      /**
+       * Applies internal padding at `ds-grid-breakpoint-md` and above
+       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | string}
+       */
+      insetMd: { type: String },
+      /**
+       * Applies internal padding at `ds-grid-breakpoint-sm` and above
+       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | string}
+       */
+      insetSm: { type: String },
+      /**
+       * Applies custom width at all breakpoints
+       */
+      width: { type: String },
+      /**
+       * Applies custom width at `ds-grid-breakpoint-lg` and above
+       */
+      widthLg: { type: String },
+      /**
+       * Applies custom width at `ds-grid-breakpoint-md` and above
+       */
+      widthMd: { type: String },
+      /**
+       * Applies custom width at `ds-grid-breakpoint-sm` and above
+       */
+      widthSm: { type: String },
     };
   }
 
@@ -74,7 +112,7 @@ export class AuroBackground extends LitElement {
 
   /**
    * This will register this element with the browser.
-   * @param {string} [name="auro-background"] - The name of element that you want to register to.
+   * @param {string} [name="auro-background"] - The name of the element that you want to register.
    *
    * @example
    * AuroBackground.register("custom-background") // this will register this element to <custom-background/>
