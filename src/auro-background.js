@@ -42,15 +42,24 @@ export class AuroBackground extends LitElement {
       /**
        * Sets the background image at `ds-grid-breakpoint-lg` and above
        */
-      bgLg: { type: String },
+      bgLg: {
+        type: String,
+        attribute: "bglg",
+      },
       /**
        * Sets the background image at `ds-grid-breakpoint-md` and above
        */
-      bgMd: { type: String },
+      bgMd: {
+        type: String,
+        attribute: "bgmd",
+      },
       /**
        * Sets the background image at `ds-grid-breakpoint-sm` and above
        */
-      bgSm: { type: String },
+      bgSm: {
+        type: String,
+        attribute: "bgsm",
+      },
       /**
        * Applies custom height at all breakpoints
        */
@@ -58,35 +67,53 @@ export class AuroBackground extends LitElement {
       /**
        * Applies custom height at `ds-grid-breakpoint-lg` and above
        */
-      heightLg: { type: String },
+      heightLg: {
+        type: String,
+        attribute: "heightlg",
+      },
       /**
        * Applies custom height at `ds-grid-breakpoint-md` and above
        */
-      heightMd: { type: String },
+      heightMd: {
+        type: String,
+        attribute: "heightmd",
+      },
       /**
        * Applies custom height at `ds-grid-breakpoint-sm` and above
        */
-      heightSm: { type: String },
+      heightSm: {
+        type: String,
+        attribute: "heightsm",
+      },
       /**
        * Applies internal padding at all breakpoints
-       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | string}
+       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | (string & {})}
        */
       inset: { type: String },
       /**
        * Applies internal padding at `ds-grid-breakpoint-lg` and above
-       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | string}
+       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | (string & {})}
        */
-      insetLg: { type: String },
+      insetLg: {
+        type: String,
+        attribute: "insetlg",
+      },
       /**
        * Applies internal padding at `ds-grid-breakpoint-md` and above
-       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | string}
+       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | (string & {})}
        */
-      insetMd: { type: String },
+      insetMd: {
+        type: String,
+        attribute: "insetmd",
+      },
       /**
        * Applies internal padding at `ds-grid-breakpoint-sm` and above
-       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | string}
+       * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | (string & {})}
        */
-      insetSm: { type: String },
+      insetSm: {
+        type: String,
+        attribute: "insetsm",
+      },
       /**
        * Applies custom width at all breakpoints
        */
@@ -94,15 +121,24 @@ export class AuroBackground extends LitElement {
       /**
        * Applies custom width at `ds-grid-breakpoint-lg` and above
        */
-      widthLg: { type: String },
+      widthLg: {
+        type: String,
+        attribute: "widthlg",
+      },
       /**
        * Applies custom width at `ds-grid-breakpoint-md` and above
        */
-      widthMd: { type: String },
+      widthMd: {
+        type: String,
+        attribute: "widthmd",
+      },
       /**
        * Applies custom width at `ds-grid-breakpoint-sm` and above
        */
-      widthSm: { type: String },
+      widthSm: {
+        type: String,
+        attribute: "widthsm",
+      },
     };
   }
 
