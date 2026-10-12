@@ -50,9 +50,7 @@ The `<auro-background>` element should be used in situations where users may:
 [![License](https://img.shields.io/npm/l/@aurodesignsystem/auro-background?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
 ![ESM supported](https://img.shields.io/badge/ESM-compatible-FFE900?style=for-the-badge)
 
-```shell
-$ npm i @aurodesignsystem/auro-background
-```
+<pre class="language-shell"><code class="language-shell">$ npm i @aurodesignsystem/auro-background</code></pre>
 
 <!-- AURO-GENERATED-CONTENT:END -->
 
@@ -64,9 +62,7 @@ Defining the dependency within each project that is using the `<auro-background>
 <!-- AURO-GENERATED-CONTENT:END -->
 <!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/auro-templates/main/templates/default/partials/usage/componentImport.md) -->
 
-```js
-import "@aurodesignsystem/auro-background";
-```
+<pre class="language-js"><code class="language-js">import "@aurodesignsystem/auro-background";</code></pre>
 
 <!-- AURO-GENERATED-CONTENT:END -->
 
@@ -75,9 +71,7 @@ import "@aurodesignsystem/auro-background";
 <!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/auro-templates/main/templates/default/partials/usage/bundleInstallDescription.md) -->
 In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Legacy browsers such as IE11 are no longer supported.
 
-```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-background@latest/+esm"></script>
-```
+<pre class="language-html"><code class="language-html">&lt;script type="module" src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-background@latest/+esm"&gt;&lt;/script&gt;</code></pre>
 
 <!-- AURO-GENERATED-CONTENT:END -->
 
@@ -86,14 +80,12 @@ In cases where the project is not able to process JS assets, there are pre-proce
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./apiExamples/basic.html) -->
 <!-- The below code snippet is automatically added from ./apiExamples/basic.html -->
 
-```html
-<auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
-  <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <auro-header level="2" visualLevel="3">View all destinations</auro-header>
-    <auro-hyperlink type="cta" variant="secondary" href="#" size="xs" style="padding-bottom: 4px;">See where we fly</auro-hyperlink>
-  </div>
-</auro-background>
-```
+<pre class="language-html"><code class="language-html">&lt;auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"&gt;
+  &lt;div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;"&gt;
+    &lt;auro-header level="2" visualLevel="3"&gt;View all destinations&lt;/auro-header&gt;
+    &lt;auro-hyperlink type="cta" variant="secondary" href="#" size="xs" style="padding-bottom: 4px;"&gt;See where we fly&lt;/auro-hyperlink&gt;
+  &lt;/div&gt;
+&lt;/auro-background&gt;</code></pre>
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Custom Component Registration for Version Management
@@ -110,39 +102,34 @@ You can do this by importing only the component class and using the `register(na
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/customRegistration.md) -->
 <!-- The below content is automatically added from ./docs/partials/customRegistration.md -->
 
-```js
-// Import the class only
+<pre class="language-js"><code class="language-js">// Import the class only
 import { AuroBackground } from '@aurodesignsystem/auro-background/class';
-
-// Register with a custom name if desired
-AuroBackground.register('custom-background');
-```
+&#10;// Register with a custom name if desired
+AuroBackground.register('custom-background');</code></pre>
 
 This will create a new custom element `<custom-background>` that behaves exactly like `<auro-background>`, allowing both to coexist on the same page without interfering with each other.
 <!-- AURO-GENERATED-CONTENT:END -->
 <div class="exampleWrapper exampleWrapper--flex">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./apiExamples/custom.html) -->
-  <!-- The below content is automatically added from ./apiExamples/custom.html -->
-  <custom-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
-    <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-      <auro-header level="2" visualLevel="3">View all destinations</auro-header>
-      <auro-hyperlink type="cta" variant="secondary" href="#" size="xs">See where we fly</auro-hyperlink>
-    </div>
-  </custom-background>
-  <!-- AURO-GENERATED-CONTENT:END -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./apiExamples/custom.html) -->
+<!-- The below content is automatically added from ./apiExamples/custom.html -->
+<custom-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
+<div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+<auro-header level="2" visualLevel="3">View all destinations</auro-header>
+<auro-hyperlink type="cta" variant="secondary" href="#" size="xs">See where we fly</auro-hyperlink>
+</div>
+</custom-background>
+<!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
-  <span slot="trigger">See code</span>
+<span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./apiExamples/custom.html) -->
 <!-- The below code snippet is automatically added from ./apiExamples/custom.html -->
 
-```html
-<custom-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
-  <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <auro-header level="2" visualLevel="3">View all destinations</auro-header>
-    <auro-hyperlink type="cta" variant="secondary" href="#" size="xs">See where we fly</auro-hyperlink>
-  </div>
-</custom-background>
-```
+<pre class="language-html"><code class="language-html">&lt;custom-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"&gt;
+  &lt;div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;"&gt;
+    &lt;auro-header level="2" visualLevel="3"&gt;View all destinations&lt;/auro-header&gt;
+    &lt;auro-hyperlink type="cta" variant="secondary" href="#" size="xs"&gt;See where we fly&lt;/auro-hyperlink&gt;
+  &lt;/div&gt;
+&lt;/custom-background&gt;</code></pre>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>

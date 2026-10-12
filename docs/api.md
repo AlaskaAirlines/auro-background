@@ -4,24 +4,24 @@ The `auro-background` element provides users a way to add a background image or 
 
 ### Properties & Attributes
 
-| Properties | Attributes | Modifiers | Type                                                                                           | Default | Description                                                    |
-| ---------- | ---------- | --------- | ---------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------- |
-| bg         | bg         |           | string                                                                                         |         | Sets the background image at all breakpoints                   |
-| bgLg       | bgLg       |           | string                                                                                         |         | Sets the background image at `ds-grid-breakpoint-lg` and above |
-| bgMd       | bgMd       |           | string                                                                                         |         | Sets the background image at `ds-grid-breakpoint-md` and above |
-| bgSm       | bgSm       |           | string                                                                                         |         | Sets the background image at `ds-grid-breakpoint-sm` and above |
-| height     | height     |           | string                                                                                         |         | Applies custom height at all breakpoints                       |
-| heightLg   | heightLg   |           | string                                                                                         |         | Applies custom height at `ds-grid-breakpoint-lg` and above     |
-| heightMd   | heightMd   |           | string                                                                                         |         | Applies custom height at `ds-grid-breakpoint-md` and above     |
-| heightSm   | heightSm   |           | string                                                                                         |         | Applies custom height at `ds-grid-breakpoint-sm` and above     |
-| inset      | inset      |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| string |         | Applies internal padding at all breakpoints                    |
-| insetLg    | insetLg    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| string |         | Applies internal padding at `ds-grid-breakpoint-lg` and above  |
-| insetMd    | insetMd    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| string |         | Applies internal padding at `ds-grid-breakpoint-md` and above  |
-| insetSm    | insetSm    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| string |         | Applies internal padding at `ds-grid-breakpoint-sm` and above  |
-| width      | width      |           | string                                                                                         |         | Applies custom width at all breakpoints                        |
-| widthLg    | widthLg    |           | string                                                                                         |         | Applies custom width at `ds-grid-breakpoint-lg` and above      |
-| widthMd    | widthMd    |           | string                                                                                         |         | Applies custom width at `ds-grid-breakpoint-md` and above      |
-| widthSm    | widthSm    |           | string                                                                                         |         | Applies custom width at `ds-grid-breakpoint-sm` and above      |
+| Properties | Attributes | Modifiers | Type                                                                                                  | Default | Description                                                    |
+| ---------- | ---------- | --------- | ----------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------- |
+| bg         | bg         |           | string                                                                                                |         | Sets the background image at all breakpoints                   |
+| bgLg       | bglg       |           | string                                                                                                |         | Sets the background image at `ds-grid-breakpoint-lg` and above |
+| bgMd       | bgmd       |           | string                                                                                                |         | Sets the background image at `ds-grid-breakpoint-md` and above |
+| bgSm       | bgsm       |           | string                                                                                                |         | Sets the background image at `ds-grid-breakpoint-sm` and above |
+| height     | height     |           | string                                                                                                |         | Applies custom height at all breakpoints                       |
+| heightLg   | heightlg   |           | string                                                                                                |         | Applies custom height at `ds-grid-breakpoint-lg` and above     |
+| heightMd   | heightmd   |           | string                                                                                                |         | Applies custom height at `ds-grid-breakpoint-md` and above     |
+| heightSm   | heightsm   |           | string                                                                                                |         | Applies custom height at `ds-grid-breakpoint-sm` and above     |
+| inset      | inset      |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |         | Applies internal padding at all breakpoints                    |
+| insetLg    | insetlg    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |         | Applies internal padding at `ds-grid-breakpoint-lg` and above  |
+| insetMd    | insetmd    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |         | Applies internal padding at `ds-grid-breakpoint-md` and above  |
+| insetSm    | insetsm    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |         | Applies internal padding at `ds-grid-breakpoint-sm` and above  |
+| width      | width      |           | string                                                                                                |         | Applies custom width at all breakpoints                        |
+| widthLg    | widthlg    |           | string                                                                                                |         | Applies custom width at `ds-grid-breakpoint-lg` and above      |
+| widthMd    | widthmd    |           | string                                                                                                |         | Applies custom width at `ds-grid-breakpoint-md` and above      |
+| widthSm    | widthsm    |           | string                                                                                                |         | Applies custom width at `ds-grid-breakpoint-sm` and above      |
 
 ### Methods
 
