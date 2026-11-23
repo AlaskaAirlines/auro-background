@@ -6,4 +6,4 @@ import { AuroBackground } from '@aurodesignsystem/auro-background/class';
 AuroBackground.register('custom-background');
 ```
 
-This will create a new custom element `<custom-background>` that behaves exactly like `<auro-background>`, allowing both to coexist on the same page without interfering with each other.
+The `register('custom-background')` call creates a new custom element, `<custom-background>`, that behaves like `<auro-background>`, so both can be on the same page without conflicts.

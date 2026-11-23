@@ -8,6 +8,11 @@
 @use '@aurodesignsystem/webcorestylesheets/src/breakpoints' as bp;
 @use '@aurodesignsystem/webcorestylesheets/src/core';
 
+// The design tokens don't define a zero size, which `inset="none"` maps to.
+:host {
+  --ds-size-0: 0;
+}
+
 .background {
   width: auto;
   width: var(--width);
@@ -41,7 +46,7 @@
     width: var(--widthLg);
     height: var(--heightLg);
 
-    padding: var(--insetMd);
+    padding: var(--insetLg);
 
     background: var(--backgroundLg);
   }

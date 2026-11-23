@@ -19,7 +19,7 @@ import { styleMap } from "lit/directives/style-map.js";
  *
  * Key capabilities:
  * - **Responsive backgrounds**: Set `bgSm`, `bgMd`, or `bgLg` to change the background at larger screen sizes.
- * - **Custom size**: Set `height` and `width` to a fixed size. Otherwise the element fits its content's height and fills its container's width.
+ * - **Custom size**: Set `height` and `width` to give the element a fixed size.
  * - **Inner spacing**: Set `inset` to add padding inside the container.
  *
  * @example
@@ -108,7 +108,7 @@ export class AuroBackground extends LitElement {
        */
       inset: { type: String },
       /**
-       * Sets the padding inside the element at `ds-grid-breakpoint-lg` (1024px) and above. Does not currently take effect: the large breakpoint uses the `insetMd` value.
+       * Sets the padding inside the element at `ds-grid-breakpoint-lg` (1024px) and above. Accepts the same values as `inset`. Uses the `insetMd` value when not set.
        * @type {'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | (string & {})}
        */
       insetLg: {

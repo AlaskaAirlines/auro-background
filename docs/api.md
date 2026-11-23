@@ -4,7 +4,7 @@ Adds a background image, color, or gradient behind the content you place inside 
 
 Key capabilities:
 - **Responsive backgrounds**: Set `bgSm`, `bgMd`, or `bgLg` to change the background at larger screen sizes.
-- **Custom size**: Set `height` and `width` to a fixed size. Otherwise the element fits its content's height and fills its container's width.
+- **Custom size**: Set `height` and `width` to give the element a fixed size.
 - **Inner spacing**: Set `inset` to add padding inside the container.
 
 ### Properties and attributes
@@ -20,7 +20,7 @@ Key capabilities:
 | heightMd   | heightmd   |           | string                                                                                                |               | Sets the height at `ds-grid-breakpoint-md` (768px) and above. Uses the `heightSm` value when not set.                                                             |
 | heightSm   | heightsm   |           | string                                                                                                |               | Sets the height at `ds-grid-breakpoint-sm` (576px) and above. Uses the `height` value when not set.                                                               |
 | inset      | inset      |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) | `0`           | Sets the padding inside the element at all breakpoints. Use a size from `none` (no padding) to `xxxl` (4rem), or any CSS `padding` value, such as `1rem`.         |
-| insetLg    | insetlg    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |               | Sets the padding inside the element at `ds-grid-breakpoint-lg` (1024px) and above. Does not currently take effect: the large breakpoint uses the `insetMd` value. |
+| insetLg    | insetlg    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |               | Sets the padding inside the element at `ds-grid-breakpoint-lg` (1024px) and above. Accepts the same values as `inset`. Uses the `insetMd` value when not set.     |
 | insetMd    | insetmd    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |               | Sets the padding inside the element at `ds-grid-breakpoint-md` (768px) and above. Accepts the same values as `inset`. Uses the `insetSm` value when not set.      |
 | insetSm    | insetsm    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |               | Sets the padding inside the element at `ds-grid-breakpoint-sm` (576px) and above. Accepts the same values as `inset`. Uses the `inset` value when not set.        |
 | width      | width      |           | string                                                                                                | `auto`        | Sets the width of the element at all breakpoints. Accepts any CSS width value, such as `600px` or `50%`.                                                          |
