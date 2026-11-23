@@ -21,7 +21,7 @@
 
 ### Background
 
-Use the `bg` attribute to set the background. It accepts any CSS `background` value, such as an image, a color, or a gradient. Set a different `bg` value for each breakpoint with `bgSm`, `bgMd`, and `bgLg`.
+Use the `bg` attribute to set the background. It accepts any CSS `background` value, such as an image, a color, or a gradient. Set a different `bg` value for each breakpoint with `bgsm`, `bgmd`, and `bglg`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/breakpoints.html) -->
@@ -40,7 +40,7 @@ Use the `bg` attribute to set the background. It accepts any CSS `background` va
 
 Use the `height` and `width` attributes to set a fixed height and width on the element. Both accept any valid CSS value, such as `100px`, `12rem`, or `50vw`.
 
-Set a different size at each breakpoint with `heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, and `widthLg`.
+Set a different size at each breakpoint with `heightsm`, `heightmd`, `heightlg`, `widthsm`, `widthmd`, and `widthlg`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/fixed-size.html) -->
@@ -63,7 +63,7 @@ The `inset` attribute accepts `none`, `xxxs`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl
 
 When using a custom CSS value, don't end it with a semicolon. For example, `1rem` is valid and `1rem;` isn't.
 
-Set a different inset at larger screen sizes with `insetSm` and `insetMd`. The `insetLg` attribute doesn't currently take effect: the large breakpoint uses the `insetMd` value.
+Set a different inset at larger screen sizes with `insetsm`, `insetmd`, and `insetlg`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset.html) -->
