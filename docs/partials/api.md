@@ -17,13 +17,11 @@
 
 </auro-accordion>
 
-## Property & Attribute Examples
+## Property and attribute examples
 
 ### Background
 
-Use the `bg` attribute to set the background image.
-
-Different `bg` values may be set for each breakpoint using the `bgSm`, `bgMd` and `bgLg` attributes.
+Use the `bg` attribute to set the background. It accepts any CSS `background` value, such as an image, a color, or a gradient. Set a different `bg` value for each breakpoint with `bgSm`, `bgMd`, and `bgLg`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/breakpoints.html) -->
@@ -38,13 +36,11 @@ Different `bg` values may be set for each breakpoint using the `bgSm`, `bgMd` an
 
 </auro-accordion>
 
-### Height and Width
+### Height and width
 
-Use the `height` and `width` attributes to set a fixed height/width on the element. 
+Use the `height` and `width` attributes to set a fixed height and width on the element. Both accept any valid CSS value, such as `100px`, `12rem`, or `50vw`.
 
-The `height` and `width` attributes accept any valid CSS value for height/width (e.g. `100px`, `12rem`, `50vw`).
-
-Custom height/width can be set per breakpoint using the `heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, and `widthLg` attributes.
+Set a different size at each breakpoint with `heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, and `widthLg`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/fixed-size.html) -->
@@ -63,11 +59,11 @@ Custom height/width can be set per breakpoint using the `heightSm`, `heightMd`, 
 
 Use the `inset` attribute to add padding inside the element.
 
-The `inset` attribute supports the following values: `none`, `xxxs`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, `xxxl` or any CSS value which is valid for the CSS `padding` rule (e.g. `1rem`).
+The `inset` attribute accepts `none`, `xxxs`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, or `xxxl`, or any CSS value that `padding` accepts, such as `1rem`.
 
-Note: When using a custom CSS rule do not include a semi-colon at at the end of the string (e.g. `1rem` is valid, `1rem;` is invalid).
+When using a custom CSS value, don't end it with a semicolon. For example, `1rem` is valid and `1rem;` isn't.
 
-Inset values may also be set for each breakpoint size via the `insetSm`, `insetMd` and `insetLg` attributes.
+Set a different inset at larger screen sizes with `insetSm` and `insetMd`. The `insetLg` attribute doesn't currently take effect: the large breakpoint uses the `insetMd` value.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset.html) -->
@@ -82,9 +78,9 @@ Inset values may also be set for each breakpoint size via the `insetSm`, `insetM
 
 </auro-accordion>
 
-## Restyle Component with CSS Variables
+## Restyle with CSS custom properties
 
-The component may be restyled by changing the values of the following token(s).
+Restyle the component by changing the values of the following tokens.
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../src/styles/tokens.scss) -->
 <!-- AURO-GENERATED-CONTENT:END -->

@@ -1,4 +1,4 @@
-The `<auro-background>` element should be used in situations where users may:
+Use `<auro-background>` when you need to:
 
-* Need to apply a background image or color to a specific section of content
-* Require responsive background images that change at different breakpoints
+* Add a background image or color to a section of content.
+* Change the background image at different breakpoints.
