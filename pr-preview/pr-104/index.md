@@ -30,7 +30,7 @@ Use `<auro-background>` when you need to:
 <!-- The below content is automatically added from ./../apiExamples/basic.html -->
 <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
 <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-<auro-header level="2" visualLevel="3">View all destinations</auro-header>
+<auro-header level="2" visuallevel="3">View all destinations</auro-header>
 <auro-hyperlink type="cta" variant="secondary" href="#" size="xs" style="padding-bottom: 4px;">See where we fly</auro-hyperlink>
 </div>
 </auro-background>
@@ -43,7 +43,7 @@ Use `<auro-background>` when you need to:
 
 <pre class="language-html"><code class="language-html">&lt;auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"&gt;
   &lt;div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;"&gt;
-    &lt;auro-header level="2" visualLevel="3"&gt;View all destinations&lt;/auro-header&gt;
+    &lt;auro-header level="2" visuallevel="3"&gt;View all destinations&lt;/auro-header&gt;
     &lt;auro-hyperlink type="cta" variant="secondary" href="#" size="xs" style="padding-bottom: 4px;"&gt;See where we fly&lt;/auro-hyperlink&gt;
   &lt;/div&gt;
 &lt;/auro-background&gt;</code></pre>

@@ -8,7 +8,7 @@ Adds a background image, color, or gradient behind the content you place inside 
 
 Key capabilities:
 - **Responsive backgrounds**: Set `bgSm`, `bgMd`, or `bgLg` to change the background at larger screen sizes.
-- **Custom size**: Set `height` and `width` to a fixed size. Otherwise the element fits its content's height and fills its container's width.
+- **Custom size**: Set `height` and `width` to give the element a fixed size.
 - **Inner spacing**: Set `inset` to add padding inside the container.
 
 ### Properties and attributes
@@ -24,7 +24,7 @@ Key capabilities:
 | heightMd   | heightmd   |           | string                                                                                                |               | Sets the height at `ds-grid-breakpoint-md` (768px) and above. Uses the `heightSm` value when not set.                                                             |
 | heightSm   | heightsm   |           | string                                                                                                |               | Sets the height at `ds-grid-breakpoint-sm` (576px) and above. Uses the `height` value when not set.                                                               |
 | inset      | inset      |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) | `0`           | Sets the padding inside the element at all breakpoints. Use a size from `none` (no padding) to `xxxl` (4rem), or any CSS `padding` value, such as `1rem`.         |
-| insetLg    | insetlg    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |               | Sets the padding inside the element at `ds-grid-breakpoint-lg` (1024px) and above. Does not currently take effect: the large breakpoint uses the `insetMd` value. |
+| insetLg    | insetlg    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |               | Sets the padding inside the element at `ds-grid-breakpoint-lg` (1024px) and above. Accepts the same values as `inset`. Uses the `insetMd` value when not set.     |
 | insetMd    | insetmd    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |               | Sets the padding inside the element at `ds-grid-breakpoint-md` (768px) and above. Accepts the same values as `inset`. Uses the `insetSm` value when not set.      |
 | insetSm    | insetsm    |           | `none` \| `xxxs` \| `xxs` \| `xs` \| `sm` \| `md` \| `lg` \| `xl` \| `xxl` \| `xxxl` \| (string & {}) |               | Sets the padding inside the element at `ds-grid-breakpoint-sm` (576px) and above. Accepts the same values as `inset`. Uses the `inset` value when not set.        |
 | width      | width      |           | string                                                                                                | `auto`        | Sets the width of the element at all breakpoints. Accepts any CSS width value, such as `600px` or `50%`.                                                          |
@@ -58,7 +58,7 @@ Key capabilities:
 <!-- The below content is automatically added from ./../apiExamples/basic.html -->
 <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
 <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-<auro-header level="2" visualLevel="3">View all destinations</auro-header>
+<auro-header level="2" visuallevel="3">View all destinations</auro-header>
 <auro-hyperlink type="cta" variant="secondary" href="#" size="xs" style="padding-bottom: 4px;">See where we fly</auro-hyperlink>
 </div>
 </auro-background>
@@ -71,7 +71,7 @@ Key capabilities:
 
 <pre class="language-html"><code class="language-html">&lt;auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"&gt;
   &lt;div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;"&gt;
-    &lt;auro-header level="2" visualLevel="3"&gt;View all destinations&lt;/auro-header&gt;
+    &lt;auro-header level="2" visuallevel="3"&gt;View all destinations&lt;/auro-header&gt;
     &lt;auro-hyperlink type="cta" variant="secondary" href="#" size="xs" style="padding-bottom: 4px;"&gt;See where we fly&lt;/auro-hyperlink&gt;
   &lt;/div&gt;
 &lt;/auro-background&gt;</code></pre>
@@ -82,18 +82,18 @@ Key capabilities:
 
 ### Background
 
-Use the `bg` attribute to set the background. It accepts any CSS `background` value, such as an image, a color, or a gradient. Set a different `bg` value for each breakpoint with `bgSm`, `bgMd`, and `bgLg`.
+Use the `bg` attribute to set the background. It accepts any CSS `background` value, such as an image, a color, or a gradient. Set a different `bg` value for each breakpoint with `bgsm`, `bgmd`, and `bglg`.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/breakpoints.html) -->
 <!-- The below content is automatically added from ../apiExamples/breakpoints.html -->
 <auro-background
     bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"
-    bgMd="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt8a7ff6c35b184273/6633c2581dbb0945b40b8787/hawaii-bg.png) center center/cover no-repeat"
-    bgLg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt947ef7b1f81b7f99/6633c2589db1edec36f6de69/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
+    bgmd="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt8a7ff6c35b184273/6633c2581dbb0945b40b8787/hawaii-bg.png) center center/cover no-repeat"
+    bglg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt947ef7b1f81b7f99/6633c2589db1edec36f6de69/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
     inset="xxxl">
 <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-<auro-header level="2" visualLevel="3">View all destinations</auro-header>
+<auro-header level="2" visuallevel="3">View all destinations</auro-header>
 <auro-hyperlink type="cta" variant="secondary" href="#" style="padding-top: 12px;" size="sm">See where we fly</auro-hyperlink>
 </div>
 </auro-background>
@@ -106,11 +106,11 @@ Use the `bg` attribute to set the background. It accepts any CSS `background` va
 
 <pre class="language-html"><code class="language-html">&lt;auro-background
   bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"
-  bgMd="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt8a7ff6c35b184273/6633c2581dbb0945b40b8787/hawaii-bg.png) center center/cover no-repeat"
-  bgLg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt947ef7b1f81b7f99/6633c2589db1edec36f6de69/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
+  bgmd="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt8a7ff6c35b184273/6633c2581dbb0945b40b8787/hawaii-bg.png) center center/cover no-repeat"
+  bglg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt947ef7b1f81b7f99/6633c2589db1edec36f6de69/MKT_091820_BF-CM-Email-Sign-Up-Materials_Merch-tiles_Evergreen_720x720-background.jpg) center center/cover no-repeat"
   inset="xxxl"&gt;
   &lt;div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;"&gt;
-    &lt;auro-header level="2" visualLevel="3"&gt;View all destinations&lt;/auro-header&gt;
+    &lt;auro-header level="2" visuallevel="3"&gt;View all destinations&lt;/auro-header&gt;
     &lt;auro-hyperlink type="cta" variant="secondary" href="#" style="padding-top: 12px;" size="sm"&gt;See where we fly&lt;/auro-hyperlink&gt;
   &lt;/div&gt;
 &lt;/auro-background&gt;</code></pre>
@@ -121,14 +121,14 @@ Use the `bg` attribute to set the background. It accepts any CSS `background` va
 
 Use the `height` and `width` attributes to set a fixed height and width on the element. Both accept any valid CSS value, such as `100px`, `12rem`, or `50vw`.
 
-Set a different size at each breakpoint with `heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, and `widthLg`.
+Set a different size at each breakpoint with `heightsm`, `heightmd`, `heightlg`, `widthsm`, `widthmd`, and `widthlg`.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/fixed-size.html) -->
 <!-- The below content is automatically added from ../apiExamples/fixed-size.html -->
 <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" height="400px" width="600px">
 <div style="height: 100%; color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-<auro-header level="2" visualLevel="3">View all destinations</auro-header>
+<auro-header level="2" visuallevel="3">View all destinations</auro-header>
 <auro-hyperlink type="cta" variant="secondary" href="#" style="padding-top: 12px;" size="sm">See where we fly</auro-hyperlink>
 </div>
 </auro-background>
@@ -141,7 +141,7 @@ Set a different size at each breakpoint with `heightSm`, `heightMd`, `heightLg`,
 
 <pre class="language-html"><code class="language-html">&lt;auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" height="400px" width="600px"&gt;
   &lt;div style="height: 100%; color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;"&gt;
-    &lt;auro-header level="2" visualLevel="3"&gt;View all destinations&lt;/auro-header&gt;
+    &lt;auro-header level="2" visuallevel="3"&gt;View all destinations&lt;/auro-header&gt;
     &lt;auro-hyperlink type="cta" variant="secondary" href="#" style="padding-top: 12px;" size="sm"&gt;See where we fly&lt;/auro-hyperlink&gt;
   &lt;/div&gt;
 &lt;/auro-background&gt;</code></pre>
@@ -156,14 +156,14 @@ The `inset` attribute accepts `none`, `xxxs`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl
 
 When using a custom CSS value, don't end it with a semicolon. For example, `1rem` is valid and `1rem;` isn't.
 
-Set a different inset at larger screen sizes with `insetSm` and `insetMd`. The `insetLg` attribute doesn't currently take effect: the large breakpoint uses the `insetMd` value.
+Set a different inset at larger screen sizes with `insetsm`, `insetmd`, and `insetlg`.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset.html) -->
 <!-- The below content is automatically added from ./../apiExamples/inset.html -->
 <auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" inset="xl">
 <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-<auro-header level="2" visualLevel="3">View all destinations</auro-header>
+<auro-header level="2" visuallevel="3">View all destinations</auro-header>
 <auro-hyperlink type="cta" variant="secondary" href="#" style="padding-top: 12px;" size="sm">See where we fly</auro-hyperlink>
 </div>
 </auro-background>
@@ -176,7 +176,7 @@ Set a different inset at larger screen sizes with `insetSm` and `insetMd`. The `
 
 <pre class="language-html"><code class="language-html">&lt;auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat" inset="xl"&gt;
   &lt;div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;"&gt;
-    &lt;auro-header level="2" visualLevel="3"&gt;View all destinations&lt;/auro-header&gt;
+    &lt;auro-header level="2" visuallevel="3"&gt;View all destinations&lt;/auro-header&gt;
     &lt;auro-hyperlink type="cta" variant="secondary" href="#" style="padding-top: 12px;" size="sm"&gt;See where we fly&lt;/auro-hyperlink&gt;
   &lt;/div&gt;
 &lt;/auro-background&gt;</code></pre>

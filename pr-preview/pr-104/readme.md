@@ -27,8 +27,7 @@ Adds a background image, color, or gradient to a section of content. Set differe
 <!-- The below content is automatically added from ./docs/partials/readmeAddlInfo.md -->
 The `bg`, `height`, `width`, and `inset` properties set a value at every breakpoint. Each one also has a property for each breakpoint, such as `bgSm`, `heightMd`, and `widthLg`. When you don't set a breakpoint property, the component uses the value from the next smaller breakpoint.
 
-All four are optional. Without them, the element fills the width of its container, fits the height of its content, has no padding, and has a transparent background. The `insetLg` property doesn't currently take effect: the large breakpoint uses the `insetMd` value.
-
+All four are optional. Without them, the element fills the width of its container, fits the height of its content, has no padding, and has a transparent background.
 These properties map to the CSS `background`, `height`, `width`, and `padding` properties, so any value those properties accept works here.
 
 To generate `bg` values, try the <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/background-image">CSS Background Image Generator</auro-hyperlink>.
@@ -84,7 +83,7 @@ If your project can't process JS assets, use the pre-processed assets. Legacy br
 
 <pre class="language-html"><code class="language-html">&lt;auro-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"&gt;
   &lt;div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;"&gt;
-    &lt;auro-header level="2" visualLevel="3"&gt;View all destinations&lt;/auro-header&gt;
+    &lt;auro-header level="2" visuallevel="3"&gt;View all destinations&lt;/auro-header&gt;
     &lt;auro-hyperlink type="cta" variant="secondary" href="#" size="xs" style="padding-bottom: 4px;"&gt;See where we fly&lt;/auro-hyperlink&gt;
   &lt;/div&gt;
 &lt;/auro-background&gt;</code></pre>
@@ -109,14 +108,14 @@ import { AuroBackground } from '@aurodesignsystem/auro-background/class';
 &#10;// Register with a custom name if desired
 AuroBackground.register('custom-background');</code></pre>
 
-This will create a new custom element `<custom-background>` that behaves exactly like `<auro-background>`, allowing both to coexist on the same page without interfering with each other.
+The `register('custom-background')` call creates a new custom element, `<custom-background>`, that behaves like `<auro-background>`, so both can be on the same page without conflicts.
 <!-- AURO-GENERATED-CONTENT:END -->
 <div class="exampleWrapper exampleWrapper--flex">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./apiExamples/custom.html) -->
 <!-- The below content is automatically added from ./apiExamples/custom.html -->
 <custom-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat">
 <div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-<auro-header level="2" visualLevel="3">View all destinations</auro-header>
+<auro-header level="2" visuallevel="3">View all destinations</auro-header>
 <auro-hyperlink type="cta" variant="secondary" href="#" size="xs">See where we fly</auro-hyperlink>
 </div>
 </custom-background>
@@ -129,7 +128,7 @@ This will create a new custom element `<custom-background>` that behaves exactly
 
 <pre class="language-html"><code class="language-html">&lt;custom-background bg="url(https://images.contentstack.io/v3/assets/blt2cefe12c88e9dd91/blt4dde4105498391f8/6633c2581dbb0973c00b8783/ad2.png) center center/cover no-repeat"&gt;
   &lt;div style="color: var(--ds-color-text-primary-inverse); display: flex; flex-direction: column; align-items: center; justify-content: center;"&gt;
-    &lt;auro-header level="2" visualLevel="3"&gt;View all destinations&lt;/auro-header&gt;
+    &lt;auro-header level="2" visuallevel="3"&gt;View all destinations&lt;/auro-header&gt;
     &lt;auro-hyperlink type="cta" variant="secondary" href="#" size="xs"&gt;See where we fly&lt;/auro-hyperlink&gt;
   &lt;/div&gt;
 &lt;/custom-background&gt;</code></pre>
