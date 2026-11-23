@@ -12,34 +12,36 @@ The following sections are editable by making changes to the following files:
 | SECTION                | DESCRIPTION                                       | FILE LOCATION                       |
 |------------------------|---------------------------------------------------|-------------------------------------|
 | Description            | Description of the component                      | `./docs/partials/description.md`    |
-| Use Cases              | Examples for when to use this component           | `./docs/partials/useCases.md`       |
-| Additional Information | For use to add any component specific information | `./docs/partials/readmeAddlInfo.md` |
-| Component Example Code | HTML sample code of the components use            | `./apiExamples/basic.html`          |
+| Use cases              | Examples for when to use this component           | `./docs/partials/useCases.md`       |
+| Additional information | For use to add any component specific information | `./docs/partials/readmeAddlInfo.md` |
+| Component example code | HTML sample code of the components use            | `./apiExamples/basic.html`          |
 -->
 
 # Background
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/description.md) -->
 <!-- The below content is automatically added from ./docs/partials/description.md -->
-The `auro-background` element is an easy-to-use mobile-first alternative to writing custom CSS for background colors or images with automatically scoped media queries. Use independently or in the slot of another custom element such as `auro-banner`.
+Adds a background image, color, or gradient to a section of content. Set different backgrounds, sizes, and padding for each breakpoint without writing media queries. Use it on its own or in the slot of another element, such as `auro-banner`.
 <!-- AURO-GENERATED-CONTENT:END -->
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/readmeAddlInfo.md) -->
 <!-- The below content is automatically added from ./docs/partials/readmeAddlInfo.md -->
-The `auro-background` component accepts 4 properties - `bg`, `height`, `width`, and `inset` that serve as the default at all breakpoints. `height`, `width`, and `inset` are not required and sizing will scale to the content when omitted. Additionally, there is a separate property for each supported breakpoint (`bgSm`, `bgMd`, `bgLg`, `heightSm`, `heightMd`, `heightLg`, `widthSm`, `widthMd`, `widthLg`).  If you don't set a specific size property, the smaller property will be used.
+The `bg`, `height`, `width`, and `inset` properties set a value at every breakpoint. Each one also has a property for each breakpoint, such as `bgSm`, `heightMd`, and `widthLg`. When you don't set a breakpoint property, the component uses the value from the next smaller breakpoint.
 
-These properties map to the compound CSS `background` property and CSS properties of `height`, `width`, and `padding`. Anything you can do within the scope of those CSS rules you can do here.
+All four are optional. Without them, the element fills the width of its container, fits the height of its content, has no padding, and has a transparent background. The `insetLg` property doesn't currently take effect: the large breakpoint uses the `insetMd` value.
 
-See <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/background-image">CSS Background Image Generator</auro-hyperlink> for a helpful code generation tool.
+These properties map to the CSS `background`, `height`, `width`, and `padding` properties, so any value those properties accept works here.
+
+To generate `bg` values, try the <auro-hyperlink target="_blank" href="https://webcode.tools/generators/css/background-image">CSS Background Image Generator</auro-hyperlink>.
 <!-- AURO-GENERATED-CONTENT:END -->
 
-## Use Cases
+## Use cases
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/useCases.md) -->
 <!-- The below content is automatically added from ./docs/partials/useCases.md -->
-The `<auro-background>` element should be used in situations where users may:
+Use `<auro-background>` when you need to:
 
-* Need to apply a background image or color to a specific section of content
-* Require responsive background images that change at different breakpoints
+* Add a background image or color to a section of content.
+* Change the background image at different breakpoints.
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Install
@@ -54,10 +56,10 @@ The `<auro-background>` element should be used in situations where users may:
 
 <!-- AURO-GENERATED-CONTENT:END -->
 
-### Define Dependency in Project
+### Define dependency in project
 
 <!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/auro-templates/main/templates/default/partials/usage/componentImportDescription.md) -->
-Defining the dependency within each project that is using the `<auro-background>` component.
+Import the component in each project that uses `<auro-background>`.
 
 <!-- AURO-GENERATED-CONTENT:END -->
 <!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/auro-templates/main/templates/default/partials/usage/componentImport.md) -->
@@ -69,13 +71,13 @@ Defining the dependency within each project that is using the `<auro-background>
 ### Use CDN
 
 <!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/auro-templates/main/templates/default/partials/usage/bundleInstallDescription.md) -->
-In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Legacy browsers such as IE11 are no longer supported.
+If your project can't process JS assets, use the pre-processed assets. Legacy browsers, such as IE11, aren't supported.
 
 <pre class="language-html"><code class="language-html">&lt;script type="module" src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-background@latest/+esm"&gt;&lt;/script&gt;</code></pre>
 
 <!-- AURO-GENERATED-CONTENT:END -->
 
-## Basic Example
+## Basic example
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./apiExamples/basic.html) -->
 <!-- The below code snippet is automatically added from ./apiExamples/basic.html -->
@@ -88,16 +90,16 @@ In cases where the project is not able to process JS assets, there are pre-proce
 &lt;/auro-background&gt;</code></pre>
 <!-- AURO-GENERATED-CONTENT:END -->
 
-## Custom Component Registration for Version Management
+## Custom component registration for version management
 
-There are two key parts to every Auro component: the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">class</a> and the custom element definition.
+Every Auro component has two key parts: the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">class</a> and the custom element definition.
 The class defines the component’s behavior, while the custom element registers it under a specific name so it can be used in HTML.
 
-When you install the component as described on the `Install` page, the class is imported automatically, and the component is registered globally for you.
+Installing the component as described in the Install section imports the class and registers the component globally for you.
 
-However, if you need to load multiple versions of the same component on a single page (for example, when two projects depend on different versions), you can manually register the class under a custom element name to avoid conflicts.
+However, if you need to load multiple versions of the same component on a single page (for example, when two projects depend on different versions), register the class manually under a custom element name to avoid conflicts.
 
-You can do this by importing only the component class and using the `register(name)` method with a unique name:
+To do this, import only the component class and call the `register(name)` method with a unique name:
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/customRegistration.md) -->
 <!-- The below content is automatically added from ./docs/partials/customRegistration.md -->
