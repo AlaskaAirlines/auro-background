@@ -1,1 +1,1 @@
-The `auro-background` element is an easy-to-use mobile-first alternative to writing custom CSS for background colors or images with automatically scoped media queries. Use independently or in the slot of another custom element such as `auro-banner`.
+Adds a background image, color, or gradient to a section of content. Set different backgrounds, sizes, and padding for each breakpoint without writing media queries. Use it on its own or in the slot of another element, such as `auro-banner`.
